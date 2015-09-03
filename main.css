@@ -53,6 +53,8 @@ body {
   .header .name-logo {
     padding: 10px 0 0 20px;
     position: relative; }
+    .header .name-logo:hover {
+      cursor: pointer; }
     @media screen and (max-width: 590px) {
       .header .name-logo {
         width: 100%;

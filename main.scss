@@ -115,6 +115,9 @@ $color-4-d: #006666;
 	.name-logo {
 		padding: 10px 0 0 20px;
 		position: relative;
+		&:hover {
+			cursor: pointer;
+		}
 		@media screen and (max-width: 590px) {
     		width: 100%;
     		padding: 10px 0 0 0;
