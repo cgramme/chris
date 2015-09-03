@@ -1,0 +1,233 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p, button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    
+}
+
+@mixin linear-gradient($params...) {
+      background: -webkit-linear-gradient($params); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient($params); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient($params); /* For Firefox 3.6 to 15 */
+      background: linear-gradient($params); /* Standard syntax */
+}
+
+html, body {
+    font-size: 62.5%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body {
+    background: url(images/background4.jpg);
+}
+
+
+div.header {
+    width: 100%;
+    cursor: pointer;
+    h1 {
+        color: #fff;
+        padding: 4px;
+        font-size: 3em;
+        text-shadow: 1px 1px 5px #000;
+        
+    }
+}
+
+div.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    h2 {
+        color: #fff;
+        margin: 3px;
+        text-shadow: 1px 1px 5px #000;
+    }
+}
+
+div.wrapper {
+    width: 1200px;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    @media screen and (max-width: 1000px) {
+            width: 100%;
+            height: auto;
+        }
+
+    @media screen and (min-height: 800px) {
+        }
+
+    .side-menu {
+        float: left;
+        width: 200px;
+        height: 100%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 0 10px;
+        box-shadow: 1px 1px 7px 2px #000, inset 0 0 2px 2px #999;
+        @include linear-gradient(130deg, #777, #333);
+        @media screen and (max-width: 1000px){
+            display: none;
+        }
+        h4 {
+            margin-top: 10px;
+            font-size: 3.5em;
+            color: #eee;
+            text-shadow: 1px 1px 5px #555;
+        }
+
+        ul {
+            overflow-Y: scroll;
+            overflow-X: hidden;
+            list-style-type: none;
+            height: 90%;
+            li {
+                padding: 5px;
+
+                div {
+                    border-radius: 5px;
+                    font-size: 2.5em;
+                    padding: 5px;
+                    box-shadow: 1px 1px 5px 0 #000;
+                    color: #ddd;
+                    text-shadow: 1px 1px 2px #000;
+                    cursor: pointer;
+                    @include linear-gradient(90deg, #777, #555);
+                    &:hover {
+                        @include linear-gradient(90deg, #ddd, #eee);
+                        color: #555;
+                        text-shadow: 1px 1px 1px #999;
+                    }
+                }
+            }
+        }
+    }
+    div.main-content {
+        float: right;
+        width: 870px;
+        @include linear-gradient(150deg, #eee, #999);
+        border-radius: 20px;
+        padding: 0 30px;
+        height: 100%;
+        box-shadow: 2px 2px 7px 2px #000, inset 0 0 0px 2px #fff, inset 0 0 3px 1px #000;
+        overflow-Y: auto;
+        @media screen and (max-width: 1000px){
+            float: none;
+            position: fixed;
+            top: 32px;
+            bottom: 0px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 92%;
+            padding: 0 10px;
+            height: 87%;
+        }
+
+        h2 {
+            color: #2781C6;
+            text-shadow: 1px 1px 2px #000;
+            font-size: 5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            @media screen and (max-width: 600px){
+                font-size: 3.5em;
+            }
+        }
+        .photo {
+            height: 200px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0 #000;
+            margin-left: 10px;
+            @media screen and (max-width: 500px){
+                display: none;
+            }
+        }
+        .description {
+            color: #999;
+            font-size: 2em;
+            float: right;
+            clear: right;
+            margin-right: 25px;
+            @media screen and (max-width: 500px){
+                display: none;
+            }
+        }
+        h3 {
+            color: #fff;
+            font-size: 3.5em;
+            margin-top: 50px;
+        }
+        h4 {
+            color: #222;
+            text-shadow: 1px 1px 1px #555;
+            font-size: 2.5em;
+            @media screen and (max-width: 600px){
+                font-size: 2.2em;
+            }
+        
+        }
+        .code {
+            display: block;
+            unicode-bidi: embed;
+            font-family: monospace;
+            white-space: pre;
+            margin:20px;
+            line-height: 1.4em;
+            background: #000;
+            padding: 10px;
+            border-radius: 10px;
+            color: #999;
+            text-shadow: 0px 0px 1px #000;
+            box-shadow: 2px 2px 5px 0 #000;
+            border: 1px solid #222;
+            overflow: auto;
+            @media screen and (max-width: 800px){
+                width: 95%;
+                margin: 0 auto;
+                padding: 5px;
+            }
+            @media screen and (max-width: 600px){
+                font-size: 2.2em;
+            }
+        }
+        button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 150px;
+            padding: 15px 5px;
+            border-radius: 10px;
+            @include linear-gradient(150deg, #ddd, #aaa);
+            font-size: 2.5em;
+            text-shadow: 1px 1px 1px #fff;
+            box-shadow: 1px 1px 7px 0 #000, inset 0 0 2px 1px #000;
+            &:hover {
+                box-shadow: 1px 1px 3px 0 #000, inset 0 0 2px 1px #000;
+                cursor: pointer;
+                @include linear-gradient(150deg, #bbb, #999);
+            }
+        }
+    }
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.indent {
+    text-indent: 3em;
+}
+.sample-code {
+    display: none;
+}

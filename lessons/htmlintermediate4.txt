@@ -1,0 +1,20 @@
+<h2 id="current-lesson">HTML lesson 4 - More style</h2>
+			<h4 class="indent">The content we place in tags isn't very attractive unless we can customize it with our own style. We will be diving into a few more inline style properties. Inline style exploits CSS properties to define style to your HTML elements. We use the style="" attribute within the opening tag and include our CSS properties in the tag, each property needs to be asigned a value. In the Next lesson we will add our properties to tags. Look below for an array of example properties and thier values.</h4>
+			<h4 class="code">
+background-color: value|red|#ff0000|;	<----Defines background color
+color: blue|#0000ff;	<----Defines text color
+border: 2px solid white;	<----Defines border with, style, and color
+padding: 50px;     <----Space from outside of element and content
+margin: 20px;	  <----Space between outside of content and parent element
+font-size: 16px|2em;	 <----Defines font size
+font-weight: bold|normal|500	 <----Defines font boldness
+
+			</h4>
+<div id="code-example" class="sample-code">
+	<h1>H1 heading</h1>
+	<h2>H2 heading</h2>
+	<h3>H3 heading</h3>
+	<h4>H4 heading</h4>
+	<h5>H5 heading</h5>
+	<h6>H6 heading</h6>
+</div>

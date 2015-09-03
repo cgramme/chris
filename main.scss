@@ -1,0 +1,588 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+html {
+	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 62.5%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
+h3 {
+	font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+body {
+	background: url(images/texture_3.jpg);
+}
+
+//new colors
+
+$color2-1-l: #0399fb;
+$color2-1-lm: #0070b9;
+$color2-1-m: #00568e;
+$color2-1-md: #004572;
+$color2-1-d: #000d15;
+
+
+//old colors
+
+
+$color-1-m: #ff9900;
+$color-1-l: #ff6600;
+$color-1-d: #cc6600;
+
+$color-2-m: #ffcc00;
+$color-2-l: #ff9900;
+$color-2-d: #cc9900;
+
+$color-3-m: #0033cc;
+$color-3-l: #3366ff;
+$color-3-d: #000066;
+
+$color-4-m: #0099cc;
+$color-4-l: #00ccff;
+$color-4-d: #006666;
+
+@mixin gradientHue ($startG, $finishG){
+  background: -webkit-linear-gradient($startG, $finishG); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($startG, $finishG); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($startG, $finishG); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($startG, $finishG);
+}
+@mixin sectionLabel (){
+	font-size: 3em;
+	border-radius: 50px;
+	font-weight: normal;
+	padding: 18px;
+	text-align: center;
+	color: #fff;
+	width: 150px;
+	text-shadow: 1px 1px 1px #222;
+	margin-bottom: 30px;
+	margin-top: -5px;
+	border: 2px solid #777;
+	box-shadow: inset 1px 1px 4px 1px #000, 0.5px 0.5px 1px 2px #222;
+	@media screen and (max-width: 900px) {
+    	width: 100px;
+		font-size: 2em;
+  	}
+	@media screen and (max-width: 600px) {
+    	width: 80px;
+    	margin-top: 5px;
+    	margin-bottom: 20px;
+    	padding: 10px;
+  	}
+}
+@-webkit-keyframes nameSlide {
+    from {transform: matrix(1,0.5,0,10,-500,0);
+    	-webkit-transform: matrix(1,0.5,0,10,-500,0);
+    	-moz-transform: matrix(1,0.5,0,10,-500,0);
+    	-o-transform: matrix(1,0.5,0,10,-500,0);
+    	-ms-transform: matrix(1,0.5,0,10,-500,0);
+    	color: #fff;
+    	}
+    to {transform: translateX(0px);
+    	-webkit-transform: translateX(0px);
+    	-moz-transform: translateX(0px);
+    	-o-transform: translateX(0px);
+    	-ms-transform: translateX(0px);
+    	color: #fff;
+    	}
+	}
+@-webkit-keyframes buttonHover {
+    from {transform: scale(1,1);}
+    to {transform: scale(1.2,1.2);}
+	}
+
+
+.header {
+	background: url(images/repeat2.jpg);
+	width: 1100px;
+	background-color: #fff;
+	box-shadow: 0 0 50px 10px #333, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
+	margin: -2px auto 0 auto;
+	border-radius: 0 0 60px 60px;
+  	@media screen and (max-width: 1100px) {
+    		border-radius: 0;
+    		width: 100%;
+  		}
+
+	.name-logo {
+		padding: 10px 0 0 20px;
+		position: relative;
+		@media screen and (max-width: 590px) {
+    		width: 100%;
+    		padding: 10px 0 0 0;
+  		}
+	}
+	h2 {
+		padding: 10px 40px;
+		color: transparent;
+		font-size: 1.8em;
+		animation: nameSlide 2s 1s forwards;
+		-webkit-animation: nameSlide 2s 1s forwards;
+		-moz-animation: nameSlide 2s 1s forwards;
+		-o-animation: nameSlide 2s 1s forwards;
+		-ms-animation: nameSlide 2s 1s forwards;
+    	@media screen and (max-width: 590px) {
+    		font-size: 1.3em;
+    		padding: 5px 10px;
+  		}
+	}
+}
+
+.main-content {
+	background: url(images/bamboo_pattern.jpg) repeat;
+	width: 1000px;
+	min-height: 500px;
+	margin: 30px auto;
+	padding: 15px;
+	border-radius: 100px;
+	border: 0px solid #fff;
+	box-shadow: 0 0 50px 10px #333, 1px 1px 5px 1px #000, inset 0 0 5px 1px #000;
+	@media screen and (max-width: 1100px) {
+    	width: 100%;
+    	border-radius: 0;
+    	padding: 15px 0;
+  	}
+  	@media screen and (max-width: 640px) {
+    	padding: 0 0 10px 0;
+
+    	.projects {
+			@include gradientHue($color2-1-l, $color2-1-lm);
+		}
+		.videos {
+			@include gradientHue($color2-1-lm, $color2-1-m);
+		}
+		.interests {
+			@include gradientHue($color2-1-m, $color2-1-md);
+		}
+		.contact {
+			@include gradientHue($color2-1-md, $color2-1-d);
+		}
+  	}
+		ul.list-options {
+			background: url(images/board1s.png);
+			background-size: 100% 100%;
+			list-style-type: none;
+			padding: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+			@media screen and (max-width: 1100px) {
+    			
+  			}
+			@media screen and (max-width: 640px) {
+    			padding: 10px 0;
+    			margin-bottom: 10px;
+    			background: none;
+  			}
+				li {
+					text-shadow: 2px 2px 5px #000;
+					padding-top: 15px;
+					text-align: center;
+					border-radius: 20px;
+					display: inline-block;
+					width: 15%;
+					margin: 2%;
+					height: 50px;
+					color: #fff;
+					font-size: 3em;
+					text-decoration: underline;
+					@media screen and (max-width: 880px) {
+    					font-size: 1.8em;
+    					height: 30px;
+    					padding-top: 10px;
+    					margin: 0 2px;
+  					}
+					@media screen and (max-width: 640px) {
+    					font-size: 1.5em;
+    					margin: 0;
+    					width: 22%;
+    					height: 30px;
+    					border: 0px solid #fff;
+    					box-shadow: 1px 1px 5px 0 #000;
+						border-radius: 5px;
+						text-decoration: none;
+  					}
+					&:hover {
+						animation: buttonHover 0.2s forwards;
+						-webkit-animation: buttonHover 0.2s forwards;
+						-moz-animation: buttonHover 0.2s forwards;
+						-o-animation: buttonHover 0.2s forwards;
+						-ms-animation: buttonHover 0.2s forwards;
+						cursor: pointer;
+					}
+
+				}			
+		}
+	.current-content {
+		padding: 50px;
+		@media screen and (max-width: 1100px) {
+    		padding: 0 10px;
+  		}
+
+		//The class of "wrap" will be the container for all ajax content requests
+		.main-wrap.wrap {
+					border: 1px solid #000;
+					background-color: #fff;
+					padding: 30px;
+					border-radius: 145px 40px 70px 70px;
+					//box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
+					@media screen and (max-width: 860px) {
+    						border-radius: 40px;
+  						}
+					@media screen and (max-width: 600px) {
+    						padding: 10px;
+    						border-radius: 20px;
+  						}
+				}
+			.wrap {
+					border: 1px solid #000;
+					background-color: #fff;
+					padding: 30px;
+					border-radius: 70px;
+					box-shadow: 1px 1px 20px 3px #000, inset 0 0 5px 0 #000;
+					@media screen and (max-width: 600px) {
+    						padding: 10px;
+    						border-radius: 20px;
+  						}
+					
+				h2 {
+					margin-bottom: 20px;
+					font-size: 2.1em;
+					line-height: 30px;
+					@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+							line-height: 25px;
+  						}
+				}
+
+				h3 {
+						color: #222;
+						font-size: 1.8em; 
+						line-height: 25px;
+						font-style: normal;
+						text-rendering: auto;
+						@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+							line-height: 20px;
+  						}
+					}
+				//Below this point are changes made for specific ajax requests and thier content
+
+				//this scss/css is for the "MAIN" content
+
+					.profile-img {
+						background: url(images/beach_pic2.jpg);
+						background-size: 100% 100%;
+						box-shadow: 1px 1px 5px 2px #555;
+  						-webkit-transform: translate(-40px, -40px);
+  						transform: translate(-10px, -10px);
+  						margin: 0 10px 10px 0;
+						float: left;
+						display: inline-block;
+						width: 250px;
+						height: 250px;
+						border-radius: 125px;
+
+						@media screen and (max-width: 860px) {
+    						display: none;
+  						}
+					}
+					.skills {
+						margin-top: 0px;
+						color: #222;
+						font-size: 2em;
+						text-shadow: 1px 1px 1px #999;
+						line-height: 32px;
+						@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+    						line-height: 22px;
+    						margin-top: 0;
+  						}
+  						
+					}
+					.resume {
+						button {
+							float: right;
+							height: 50px;
+							width: 100px;
+							background-color: #384d7a;
+							font-size: 1.8em;
+							color: #fff;
+							text-shadow: 1px 1px 5px #000;
+							border-radius: 25px;
+							box-shadow: 2px 2px 5px 2px #000;
+							cursor: pointer;
+							-webkit-transform: translate(-40px, -40px);
+  							transform: translate(14px, -15px);
+  							@media screen and (max-width: 600px) {
+    							-webkit-transform: translate(0, 0);
+  								transform: translate(0, 0);
+  								width: auto;
+  								height: auto;
+  								padding: 5px 10px;
+  							}
+							&:hover {
+								box-shadow: 2px 2px 6px 3px #000;
+							}
+						}
+					}
+				//this scss/css is for the "PROJECTS" content
+
+				div.projects-label {
+					@include sectionLabel();
+					@include gradientHue($color2-1-l, $color2-1-lm);
+				}
+				ul {
+					list-style-type: none;
+				}
+				.wrapper {
+					background: url(images/darkwood2.jpg);
+					border-radius: 40px;
+					border: 1px solid #fff;
+					padding: 20px;
+					margin: 20px;
+					box-shadow: 2px 2px 10px 2px #000;
+					@media screen and (max-width: 700px) {
+						margin: 20px 0;
+  						}
+					
+					h2 {
+						font-size: 3.5em;
+						text-shadow: 1px 1px 5px #000;
+						font-weight: bold;
+						color: #fff;
+						line-height: 1.1em;
+						font-family: "Roboto","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+						@media screen and (max-width: 500px) {
+							font-size: 2.5em;
+  						}
+  						@media screen and (max-width: 420px) {
+							font-size: 2em;
+  						}
+					}
+					p {
+						color: #aaa;
+						font-weight: bold;
+						font-size: 1.7em;
+						font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+						text-shadow: 1px 1px 3px #000;
+						@media screen and (max-width: 450px) {
+							font-size: 1.4em;
+  						}
+					}
+					.technologies {
+						border: 1px solid #aaa;
+						padding: 7px;
+						display: inline-block;
+						border-radius: 10px;
+						margin-top: 10px;
+						background-color: #222;
+						box-shadow: 2px 2px 5px 2px #000;
+
+
+						h3 {
+							font-size: 1.8em;
+							color: #fff;
+							text-shadow: 1px 1px 5px #000;
+							@media screen and (max-width: 450px) {
+							font-size: 1.5em;
+  						}
+						}
+					}
+
+					button {
+						padding: 10px;
+						font-size: 1.8em;
+						color: #fff;
+						text-shadow: 1px 1px 5px #000;
+						border-radius: 20px;
+						box-shadow: 2px 2px 5px 2px #000;
+						margin-right: 10px;
+						margin-top: 10px;
+						cursor: pointer;
+						&:hover {
+							box-shadow: 2px 2px 6px 3px #000;
+						}
+					}
+					.view-site {
+						background-color: #387a43;
+					}
+					.view-code {
+						background-color: #384d7a;
+					}
+				}
+				
+
+				//"VIDEOS" content below
+				.video-content {
+					text-align: center;
+					div.videos-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-lm, $color2-1-m);
+					}
+					.wrapper {
+						padding: 10px;
+						margin-bottom: 10px;
+						@media screen and (max-width: 450px) {
+    							padding: 0;
+  							}
+					}
+					p {
+						padding-top: 10px;
+						color: #fff;
+						font-size: 2em;
+						text-align: center;
+						text-shadow: 2px 2px 5px #000;
+						@media screen and (max-width: 500px) {
+    						font-size: 1.7em;
+    						padding: 10px;
+  						}
+					}
+
+					.video-container {
+						display: inline-block;
+						background-color: #222;
+						text-align: center;
+						padding: 5px;
+						border-radius: 10px;
+						margin: 20px 5px 5px 5px;
+						box-shadow: 0 0 10px 2px #000;
+						h3 {
+							color: #ccc;
+						}
+						iframe {
+							margin-top: 5px;
+							width: 340px;
+							height: 340px;
+							@media screen and (max-width: 450px) {
+    							width: 300px;
+    							height: 300px;;
+  							}
+  							@media screen and (max-width: 400px) {
+    							width: 250px;
+    							height: 250px;
+  							}
+						}
+					}
+
+				}
+
+				//"CONTACT" content below
+
+				.contact-content {
+					div.contact-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-md, $color2-1-d);
+					}
+					.contact-wrap {
+						background: url(images/darkwood2.jpg);
+						background-size: 100% 100%;
+						margin-bottom: 20px;
+						margin-top: 10px;
+						padding: 10px;
+						border-radius: 60px;
+						box-shadow: 1px 1px 10px 2px #000, inset 0 0 5px 0 #000;
+						border: 1px solid #999;
+						&:hover {
+							cursor: pointer;
+						}
+						&:hover img {
+							-webkit-animation-name: buttonHover;
+    	                	-webkit-animation-duration: 0.2s;
+    	                	-webkit-animation-fill-mode: forwards;
+							
+						}
+						img {
+							display: inline-block;
+							height: 100px;
+							width: 100px;
+							float: left;
+							@media screen and (max-width: 600px) {
+    							height: 50px;
+    							width: 50px;
+  							}
+  							@media screen and (max-width: 400px) {
+    							height: 25px;
+    							width: 25px;
+  							}
+						}
+						h3 {
+							display: inline-block;
+							font-size: 2.2em;
+							margin: 40px 0 0 20px;
+							color: #fff;
+							text-shadow: 2px 2px 5px #000;
+							@media screen and (max-width: 600px) {
+								display: block;
+								text-align: center;
+    							margin: 20px 0 0 0;
+    							font-size: 1.7em;
+  							}
+  							@media screen and (max-width: 400px) {
+    							margin: 5px 0 0 0;
+    							font-size: 1.5em;
+  							}
+						}
+					}
+
+				}
+
+				//"INTERESTS" content below
+
+				.interests-content {
+					padding-bottom: 10px;
+					div.interests-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-m, $color2-1-md);
+					}
+					img {
+						height: 100px;
+						width:200px;
+						display: inline-block;
+						@media screen and (max-width: 600px) {
+    						height: 50px;
+    						width: 100px;
+  						}
+					}
+					img.computer {
+						float: right;
+					}
+					img.mountain {
+						float: left;
+					}
+				}
+
+
+					
+
+			}
+				
+				
+	}
+}
+
+
+.clear {
+	clear: both;
+}
+.indent {
+	text-indent: 3em;
+}
+.center-text {
+	text-align: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+

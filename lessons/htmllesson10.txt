@@ -1,0 +1,13 @@
+<h2 id="current-lesson">HTML lesson 10 - Image tag</h2>
+			<h4 class="indent">Our website is coming along very nicely but I think we can still spice it up a bit. I've added an img tag or "image" &lt;img>. Unlike the other tags the img does not get a closing tag. A src attribute defines the url of the image location. An alt attribute should be added for people with screen readers for photo information. Click on the code to see!</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;img src="bad_kitty.jpg" alt="bad cat">
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<img src="http://cdn.grumpycats.com/wp-content/uploads/2012/12/Dec-24v2resized-625x468.jpg" alt="bad cat">
+</div>

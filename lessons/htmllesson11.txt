@@ -1,0 +1,13 @@
+<h2 id="current-lesson">HTML lesson 11 - Link tag</h2>
+			<h4 class="indent">A very widely used tag is known as the link or &lt;a&gt; tag. HTML links are specified in the "href" attribute. Any content between the opening and closing tags will be displayed, if any content inside is selected you will be taken to the supplied link. click code for example.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;a href="http://en.wikipedia.org/wiki/Monkey">All about monkeys&lt;/a>     &lt;----- HTML link tag
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<a href="http://en.wikipedia.org/wiki/Monkey">All about monkeys</a>
+</div>

@@ -1,0 +1,15 @@
+<div class="wrap">
+					<div class="contact-content">
+						<div class="contact-label">Contact</div>
+						<div class="contact-wrap" onclick="location.href='mailto:cgramme36@gmail.com'">
+							<img src="images/email.png" alt="email icon">
+							<h3>E-Mail: Cgramme36@gmail.com</h3>
+							<div class="clear"></div>
+						</div>
+						<div class="contact-wrap" onclick="location.href='tel:+1-555-555-1212'">
+							<img src="images/phone.png" alt="phone icon">
+							<h3>Call/Text: Mobile(770) 549-5787</h3>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>

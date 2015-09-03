@@ -1,0 +1,236 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
+
+html, body {
+  font-size: 62.5%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+body {
+  background: url(images/background4.jpg); }
+
+div.header {
+  width: 100%;
+  cursor: pointer; }
+  div.header h1 {
+    color: #fff;
+    padding: 4px;
+    font-size: 3em;
+    text-shadow: 1px 1px 5px #000; }
+
+div.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  div.footer h2 {
+    color: #fff;
+    margin: 3px;
+    text-shadow: 1px 1px 5px #000; }
+
+div.wrapper {
+  width: 1200px;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 5px; }
+  @media screen and (max-width: 1000px) {
+    div.wrapper {
+      width: 100%;
+      height: auto; } }
+  div.wrapper .side-menu {
+    float: left;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 1px 1px 7px 2px #000, inset 0 0 2px 2px #999;
+    background: -webkit-linear-gradient(130deg, #777, #333);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(130deg, #777, #333);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(130deg, #777, #333);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(130deg, #777, #333);
+    /* Standard syntax */ }
+    @media screen and (max-width: 1000px) {
+      div.wrapper .side-menu {
+        display: none; } }
+    div.wrapper .side-menu h4 {
+      margin-top: 10px;
+      font-size: 3.5em;
+      color: #eee;
+      text-shadow: 1px 1px 5px #555; }
+    div.wrapper .side-menu ul {
+      overflow-Y: scroll;
+      overflow-X: hidden;
+      list-style-type: none;
+      height: 90%; }
+      div.wrapper .side-menu ul li {
+        padding: 5px; }
+        div.wrapper .side-menu ul li div {
+          border-radius: 5px;
+          font-size: 2.5em;
+          padding: 5px;
+          box-shadow: 1px 1px 5px 0 #000;
+          color: #ddd;
+          text-shadow: 1px 1px 2px #000;
+          cursor: pointer;
+          background: -webkit-linear-gradient(90deg, #777, #555);
+          /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(90deg, #777, #555);
+          /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(90deg, #777, #555);
+          /* For Firefox 3.6 to 15 */
+          background: linear-gradient(90deg, #777, #555);
+          /* Standard syntax */ }
+          div.wrapper .side-menu ul li div:hover {
+            background: -webkit-linear-gradient(90deg, #ddd, #eee);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ddd, #eee);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ddd, #eee);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ddd, #eee);
+            /* Standard syntax */
+            color: #555;
+            text-shadow: 1px 1px 1px #999; }
+  div.wrapper div.main-content {
+    float: right;
+    width: 870px;
+    background: -webkit-linear-gradient(150deg, #eee, #999);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(150deg, #eee, #999);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(150deg, #eee, #999);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(150deg, #eee, #999);
+    /* Standard syntax */
+    border-radius: 20px;
+    padding: 0 30px;
+    height: 100%;
+    box-shadow: 2px 2px 7px 2px #000, inset 0 0 0px 2px #fff, inset 0 0 3px 1px #000;
+    overflow-Y: auto; }
+    @media screen and (max-width: 1000px) {
+      div.wrapper div.main-content {
+        float: none;
+        position: fixed;
+        top: 32px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 92%;
+        padding: 0 10px;
+        height: 87%; } }
+    div.wrapper div.main-content h2 {
+      color: #2781C6;
+      text-shadow: 1px 1px 2px #000;
+      font-size: 5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 10px; }
+      @media screen and (max-width: 600px) {
+        div.wrapper div.main-content h2 {
+          font-size: 3.5em; } }
+    div.wrapper div.main-content .photo {
+      height: 200px;
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px 0 #000;
+      margin-left: 10px; }
+      @media screen and (max-width: 500px) {
+        div.wrapper div.main-content .photo {
+          display: none; } }
+    div.wrapper div.main-content .description {
+      color: #999;
+      font-size: 2em;
+      float: right;
+      clear: right;
+      margin-right: 25px; }
+      @media screen and (max-width: 500px) {
+        div.wrapper div.main-content .description {
+          display: none; } }
+    div.wrapper div.main-content h3 {
+      color: #fff;
+      font-size: 3.5em;
+      margin-top: 50px; }
+    div.wrapper div.main-content h4 {
+      color: #222;
+      text-shadow: 1px 1px 1px #555;
+      font-size: 2.5em; }
+      @media screen and (max-width: 600px) {
+        div.wrapper div.main-content h4 {
+          font-size: 2.2em; } }
+    div.wrapper div.main-content .code {
+      display: block;
+      unicode-bidi: embed;
+      font-family: monospace;
+      white-space: pre;
+      margin: 20px;
+      line-height: 1.4em;
+      background: #000;
+      padding: 10px;
+      border-radius: 10px;
+      color: #999;
+      text-shadow: 0px 0px 1px #000;
+      box-shadow: 2px 2px 5px 0 #000;
+      border: 1px solid #222;
+      overflow: auto; }
+      @media screen and (max-width: 800px) {
+        div.wrapper div.main-content .code {
+          width: 95%;
+          margin: 0 auto;
+          padding: 5px; } }
+      @media screen and (max-width: 600px) {
+        div.wrapper div.main-content .code {
+          font-size: 2.2em; } }
+    div.wrapper div.main-content button {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 150px;
+      padding: 15px 5px;
+      border-radius: 10px;
+      background: -webkit-linear-gradient(150deg, #ddd, #aaa);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(150deg, #ddd, #aaa);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(150deg, #ddd, #aaa);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(150deg, #ddd, #aaa);
+      /* Standard syntax */
+      font-size: 2.5em;
+      text-shadow: 1px 1px 1px #fff;
+      box-shadow: 1px 1px 7px 0 #000, inset 0 0 2px 1px #000; }
+      div.wrapper div.main-content button:hover {
+        box-shadow: 1px 1px 3px 0 #000, inset 0 0 2px 1px #000;
+        cursor: pointer;
+        background: -webkit-linear-gradient(150deg, #bbb, #999);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(150deg, #bbb, #999);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(150deg, #bbb, #999);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(150deg, #bbb, #999);
+        /* Standard syntax */ }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.indent {
+  text-indent: 3em; }
+
+.sample-code {
+  display: none; }
+
+/*# sourceMappingURL=htmltutorial.css.map */

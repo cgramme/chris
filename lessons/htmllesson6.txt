@@ -1,0 +1,10 @@
+<h2 id="current-lesson">HTML lesson 6 - My first website</h2>
+			<h4 class="indent">You already know enough to make your first website! The easiest way to get started is to open your "notepad" that came with your computer. For Windows go to the "Start menu" at bottom left. Click "Programs". Click "Accessories". Click "Notepad". Copy the below code into your notepad editor and save it as "index.html". Make sure you replace the .txt with .html! After you've saved it to a place you will remember how to get back to go open the file and... BAM! Since you're basicly a pro now try experimenting by adding a &lt;h2&gt;I has did it!&lt;/h2&gt; to the body.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;h1>My First Website!&lt;/h1>
+&lt;/body>
+&lt;/html></h4>

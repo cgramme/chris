@@ -1,0 +1,18 @@
+<h2 id="current-lesson">HTML lesson 2 - Pre tag</h2>
+			<h4 class="indent">In the last lesson we talked about the use of line breaks. Almost all HTML doesn't respect whitespace within the content, this is where the &lt;pre> tag comes into play. Any content included within the &lt;pre>....&lt;/pre> will be displayed as it is written in the tag. This is a very useful tag for displaying code. Click the code below for an example.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;pre>The pre tag is great for working with spaces     line breaks,
+
+or any formatting of text you would like.&lt;/pre>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<pre>The pre tag is great for working with spaces     line breaks,
+
+or any formatting of text you would like.
+	</pre>
+</div>

@@ -1,0 +1,31 @@
+<div class="wrap">
+					<div class="video-content">
+						<div class="videos-label">Video</div>
+						<div class="wrapper">
+							<p>Videos of business and some fun at home.</p>
+							<div class="video-container">
+								<h3>Car Maintenance and Fuel Easy</h3>
+								<iframe src="https://www.youtube.com/embed/zqs7fTC0894"
+								frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="video-container">
+								<h3>Rocket launch on a windy day</h3>
+								<iframe src="https://www.youtube.com/embed/pRKSDnaXJG4"
+								frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="wrapper">
+							<p>Helpful tutorials I came across on my programming journey.</p>
+							<div class="video-container">
+								<h3>The New Boston Android tutorials</h3>
+								<iframe src="https://www.youtube.com/embed/SUOWNXGRc6g?list=PL2F07DBCDCC01493A"
+								frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="video-container">
+								<h3>Advanced Javascript tutorials</h3>
+								<iframe src="https://www.youtube.com/embed/awP_QQQk_Nc?list=PLOxOmO43E6Jt4GfZtF8yR6KghIdmc7715"
+								frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>

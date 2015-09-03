@@ -1,0 +1,23 @@
+<h2 id="current-lesson">HTML lesson 12 - Nesting elements</h2>
+			<h4 class="indent">Let's try adding multiple tags to a page. By now we know about links, images, headings ect... let's add all of these elements inside a &lt;div> tag. Look at the example code below to see how it's done. Nesting in HTML means putting something within something else, like a bird nest holds eggs. Make sure to format any nested elements with an indentation, a tab space usually works.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;div style="width:400px;height:400px;padding:20px;background-color:blue">
+    &lt;h1>Nesting HTML&lt;/h1>
+    &lt;a href="http://en.wikipedia.org/wiki/Monkey">
+    	&lt;img src="bird_nest.jpg" alt="Bird nest">
+    &lt;/a>
+  &lt;/div>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<div style="width:400px;height:400px;padding:20px;background-color:blue">
+		<h1>Nesting HTML</h1>
+		<a href="http://en.wikipedia.org/wiki/Monkey">
+			<img style="width:200px;height:200px" src="http://healertoday.com/wp-content/uploads/2013/02/Empty-Nest.jpg" alt="Bird nest">
+		</a>
+	</div>
+</div>

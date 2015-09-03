@@ -1,0 +1,11 @@
+<h2 id="current-lesson">HTML lesson 4 - HTML document</h2>
+				<h4 class="indent">There are a lot of tags to learn in HTML, but don't let that overwhelm you. You will learn the basics and be able to make some sweet websites in no time, while learning new tags as you go. A website needs a few basic tags to start. The &lt;html&gt; tag is used to wrap all other html text in your document. Everything goes in between the html opening and closing tags &lt;html&gt;....&lt;/html&gt;. Within our html tags are two very important tags &lt;head&gt;&lt;/head&gt; & &lt;body&gt;&lt;/body&gt; tags, which we will get into in the next lesson.</h4>
+				<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>My Awesome Page Title&lt;/title>
+&lt;/head>
+&lt;body>
+  &lth1>My first Website!&lt;/h1>
+&lt;/body>
+&lt;/html></h4>

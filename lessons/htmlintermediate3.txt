@@ -1,0 +1,23 @@
+<h2 id="current-lesson">HTML lesson 3 - Headings 2</h2>
+			<h4 class="indent">We have used the &lt;h1> tag in our previous lessons but it's time to introduce the other heading tags. Headings are ordered by numbers with 1 being the largest and most important. headings degrade in size and importance with the number asigned to the them. example &lt;h1>&lt;h2>&lt;h3>&lt;h4>&lt;h5>&lt;h6>. CLick below for an example of all these heading tags.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;h1>H1 heading&lt;/h1>
+  &lt;h2>H2 heading&lt;/h2>
+  &lt;h3>H3 heading&lt;/h3>
+  &lt;h4>H4 heading&lt;/h4>
+  &lt;h5>H5 heading&lt;/h5>
+  &lt;h6>H6 heading&lt;/h6>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<h1>H1 heading</h1>
+	<h2>H2 heading</h2>
+	<h3>H3 heading</h3>
+	<h4>H4 heading</h4>
+	<h5>H5 heading</h5>
+	<h6>H6 heading</h6>
+</div>

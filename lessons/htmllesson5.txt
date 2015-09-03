@@ -1,0 +1,11 @@
+<h2 id="current-lesson">HTML lesson 5 - Head and body</h2>
+			<h4 class="indent">After we add the &lt;html&gt;&lt;/html&gt; tags we need to add the &lt;head&gt;&lt;/head&gt; tags. In the head of our document we will not include any visuals that will be displayed on the screen. The head is reserved for loading data for our document. Under the head we will include the &lt;body&gt;&lt/body&gt; tags. This is where we define what is on our page. We can add text, shapes, images, video, animations, and a boat load of other awesome stuff in the body.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;h1>My First Website!&lt;/h1>
+  &lt;img src="my_image.jpg"/>
+&lt;/body>
+&lt;/html></h4>

@@ -1,0 +1,13 @@
+<h2 id="current-lesson">HTML lesson 7 - Inline style</h2>
+			<h4 class="indent">All this text is cool but we want more! To make awesome changes to our text and everything else we will add "Style" to our code. Below in the &lt;h1> tag we have added a bit of style called "inline style". copy it to your notepad or just click on it to see it in action.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;h1 style="color:red">Look at all this style&lt;/h1>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<h1 style="color:red">Look at all this style</h1>
+</div>

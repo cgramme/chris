@@ -1,0 +1,13 @@
+<h2 id="current-lesson">HTML lesson 1 - Line breaks</h2>
+			<h4 class="indent">By now you should be familiar with headings &lt;h1> and paragraphs &lt;p>, these tags do not respect whitespace. Whitespace is empty space within your content. Most tags only respect single spaces between words, any extra spaces will be displayed as a single space. additionally, line breaks are not respected either so we need the the line break tag &lt;br>. Line breaks do not need closing tags. Place the &lt;br> tag anywhere in your text where a line break is necessary. Click on the code below to see how it works.</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;h1>To use line breaks in HTML you will need the &lt;br> tag to skip to the next line.&lt;/h1>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<h1>To use line breaks in HTML you will need the <br> tag to skip to the next line.</h1>
+</div>

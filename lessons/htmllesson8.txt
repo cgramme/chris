@@ -1,0 +1,13 @@
+<h2 id="current-lesson">HTML lesson 8 - Div tag</h2>
+			<h4 class="indent">If you're thinking "text is for babies" then get ready! We are going to make a box! It is time to introduce you to another tag, the &lt;div>&lt;/div>. The div tag is used for a lot of things like containing other text or tags inside of it. We'll start by simply making a box and giving it some style. We add height, width, and background-color properties to get a nice pink box. Click the code to see it work!</h4>
+			<h4 class="code">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+  &lt;div style="width:400px;height:200px;background-color:pink">&lt;/div>
+&lt;/body>
+&lt;/html></h4>
+<div id="code-example" class="sample-code">
+	<div style="width:400px;height:200px;background-color:pink"></div>
+</div>

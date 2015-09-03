@@ -1,0 +1,2 @@
+<h2 id="current-lesson">HTML Basics wrap up</h2>
+			<h4 class="indent">Good job getting through all those basic HTML principles. If you feel comfortable with most of the information in this course I would recomend either starting the HTML intermediate or even the CSS Basics course. You can always come back and review any lesson you like at any time for a refresher. Good luck on your journey, you are on a great start!</h4>
