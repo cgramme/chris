@@ -17,7 +17,7 @@ h3 {
 	font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 body {
-	background: url(images/texture_3.jpg);
+	background: url(images/texture_5.jpg);
 }
 
 //new colors
@@ -65,8 +65,7 @@ $color-4-d: #006666;
 	text-shadow: 1px 1px 1px #222;
 	margin-bottom: 30px;
 	margin-top: -5px;
-	border: 2px solid #777;
-	box-shadow: inset 1px 1px 4px 1px #000, 0.5px 0.5px 1px 2px #222;
+	box-shadow: 1px 1px 5px 0px #000, inset 0 0 3px 0 #222;
 	@media screen and (max-width: 900px) {
     	width: 100px;
 		font-size: 2em;
@@ -93,20 +92,112 @@ $color-4-d: #006666;
     	-ms-transform: translateX(0px);
     	color: #fff;
     	}
-	}
+}
+keyframes buttonHover {
+    from {transform: scale(1,1);}
+    to {transform: scale(1.1,1.1);}
+}
 @-webkit-keyframes buttonHover {
     from {transform: scale(1,1);}
-    to {transform: scale(1.2,1.2);}
-	}
+    to {transform: scale(1.1,1.1);}
+}
+@mixin addTranslateY ($param){
+    -moz-transform: translateY($param);
+    -webkit-transform: translateY($param);
+    -o-transform: translateY($param);
+    transform: translateY($param);
+}
+@-webkit-keyframes translateYin {
+   0% {opacity: 0}
+   100% {
+   	@include addTranslateY(-290px);
+   	opacity: 1;
+   }
+}
+@keyframes translateYin {
+   0% {opacity: 0}
+   85% {@include addTranslateY(-295px)}
+   100% {@include addTranslateY(-290px);opacity: 1;}
+}
+.translate-y-in {
+    -webkit-animation: translateYin 2s forwards;
+    animation: translateYin 2s forwards;
+}
+
+@-webkit-keyframes translateYout {
+   0% {}
+   100% {
+   		@include addTranslateY(-290px);
+   		opacity: 0;
+   }
+}
+@keyframes translateYout {
+   0% {}
+   100% {
+   		@include addTranslateY(-290px);
+   		opacity: 0;
+   }
+}
+.translate-y-out {
+    -webkit-animation: translateYout 2s forwards;
+    animation: translateYout 2s forwards;
+}
+
+@keyframes fallIn {
+    0%{
+    	-webkit-transform: rotateY(50deg) rotateX(0deg) scale(0);
+    	transform: rotateY(50deg) rotateX(0eg) scale(0);
+    }
+    100%{
+    	transform: rotateY(0deg) rotateX(0deg) scale(1);
+    	-webkit-transform: rotateY(0deg) rotateX(0deg) scale(1);
+    }
+}
+@-webkit-keyframes fallIn {
+    0%{
+    	-webkit-transform: rotateY(50deg) rotateX(20deg) scale(0);
+    	transform: rotateY(50deg) rotateX(20deg) scale(0);
+    }
+    100%{
+    	transform: rotateY(0deg) rotateX(0deg) scale(1);
+    	-webkit-transform: rotateY(0deg) rotateX(0deg) scale(1);
+    }
+}
+.fall-in {
+    -webkit-animation: fallIn 1s forwards;
+    animation: fallIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from{}
+
+    to{opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    from{}
+
+    to{opacity: 1}
+}
+.fade-in {
+    -webkit-animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
+}
+
+body > .wrapper {
+	//display: none;
+	opacity: 0;
+}
 
 
 .header {
-	background: url(images/repeat2.jpg);
+	background: url(images/repeat6.jpg);
 	width: 1100px;
+	height: 110px;
 	background-color: #fff;
-	box-shadow: 0 0 50px 10px #333, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
-	margin: -2px auto 0 auto;
-	border-radius: 0 0 60px 60px;
+	box-shadow: 0 0 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
+	margin: 10px auto 0 auto;
+	padding-bottom: 20px;
+	border-radius: 5px;
   	@media screen and (max-width: 1100px) {
     		border-radius: 0;
     		width: 100%;
@@ -123,31 +214,16 @@ $color-4-d: #006666;
     		padding: 10px 0 0 0;
   		}
 	}
-	h2 {
-		padding: 10px 40px;
-		color: transparent;
-		font-size: 1.8em;
-		animation: nameSlide 2s 1s forwards;
-		-webkit-animation: nameSlide 2s 1s forwards;
-		-moz-animation: nameSlide 2s 1s forwards;
-		-o-animation: nameSlide 2s 1s forwards;
-		-ms-animation: nameSlide 2s 1s forwards;
-    	@media screen and (max-width: 590px) {
-    		font-size: 1.3em;
-    		padding: 5px 10px;
-  		}
-	}
 }
-
 .main-content {
-	background: url(images/bamboo_pattern.jpg) repeat;
-	width: 1000px;
+	//background: url(images/bamboo_pattern.jpg) repeat;
+	width: 1100px;
 	min-height: 500px;
-	margin: 30px auto;
-	padding: 15px;
-	border-radius: 100px;
+	margin: 10px auto;
+	//padding: 15px;
+	border-radius: 5px;
 	border: 0px solid #fff;
-	box-shadow: 0 0 50px 10px #333, 1px 1px 5px 1px #000, inset 0 0 5px 1px #000;
+	//box-shadow: 2px 2px 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 1px #333;
 	@media screen and (max-width: 1100px) {
     	width: 100%;
     	border-radius: 0;
@@ -169,13 +245,40 @@ $color-4-d: #006666;
 			@include gradientHue($color2-1-md, $color2-1-d);
 		}
   	}
+  		.main-list-wrap {
+  			background: url(images/granite2.jpg) repeat;
+  			padding: 10px;
+  			border-radius: 5px;
+  			box-shadow: 0 0 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
+  			#looking-for-work {
+  				padding: 10px;
+  				padding-top: 15px;
+  				width: 400px;
+				display: inline-block;
+				text-align: center;
+				p {
+					color: #fff;
+					font-size: 22px;
+					//font-weight: 500;
+					text-shadow: 1px 1px 2px #000;
+					font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+				}
+				p.name {
+					padding-top: 10px;
+					font-family: "Times New Roman",Times,Arial,sans-serif;
+					font-size: 16px;
+					span {
+						color: #ddd;
+						font-weight: 100;
+					}
+				}
+			}
+  		}
 		ul.list-options {
-			background: url(images/board1s.png);
-			background-size: 100% 100%;
+			float: left;
+			display: inline-block;
+			width: 650px;
 			list-style-type: none;
-			padding: 20px;
-			margin-bottom: 20px;
-			text-align: center;
 			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 			@media screen and (max-width: 1100px) {
     			
@@ -185,57 +288,51 @@ $color-4-d: #006666;
     			margin-bottom: 10px;
     			background: none;
   			}
-				li {
-					text-shadow: 2px 2px 5px #000;
-					padding-top: 15px;
+				li.parent-3d {
+					perspective: 200px;
 					text-align: center;
-					border-radius: 20px;
 					display: inline-block;
-					width: 15%;
-					margin: 2%;
-					height: 50px;
-					color: #fff;
-					font-size: 3em;
-					text-decoration: underline;
+					width: 120px;
+					margin: 0px 3px;
+					height: 120px;
 					@media screen and (max-width: 880px) {
-    					font-size: 1.8em;
-    					height: 30px;
-    					padding-top: 10px;
-    					margin: 0 2px;
   					}
 					@media screen and (max-width: 640px) {
-    					font-size: 1.5em;
-    					margin: 0;
-    					width: 22%;
-    					height: 30px;
-    					border: 0px solid #fff;
-    					box-shadow: 1px 1px 5px 0 #000;
-						border-radius: 5px;
-						text-decoration: none;
   					}
 					&:hover {
-						animation: buttonHover 0.2s forwards;
-						-webkit-animation: buttonHover 0.2s forwards;
-						-moz-animation: buttonHover 0.2s forwards;
-						-o-animation: buttonHover 0.2s forwards;
-						-ms-animation: buttonHover 0.2s forwards;
 						cursor: pointer;
+					}
+					.child-3d {
+						opacity: 0;
+						text-shadow: 1px 1px 2px #000;
+						text-align: center;
+						border-radius: 3px;
+						box-shadow: 1px 1px 5px 2px #000, inset 0 0 5px 0 #000;
+						width: 120px;
+						height: 120px;
+						background: url(images/repeat4.jpg);
+						p {
+							padding-top: 45px;
+							pointer-events: none;
+							color: #fff;
+							font-size: 20px;
+						}
 					}
 
 				}			
 		}
 	.current-content {
-		padding: 50px;
+		padding: 10px 0;
 		@media screen and (max-width: 1100px) {
     		padding: 0 10px;
   		}
 
 		//The class of "wrap" will be the container for all ajax content requests
 		.main-wrap.wrap {
-					border: 1px solid #000;
 					background-color: #fff;
 					padding: 30px;
-					border-radius: 145px 40px 70px 70px;
+					padding-top: 5px;
+					border-radius: 5px;
 					//box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
 					@media screen and (max-width: 860px) {
     						border-radius: 40px;
@@ -246,11 +343,10 @@ $color-4-d: #006666;
   						}
 				}
 			.wrap {
-					border: 1px solid #000;
 					background-color: #fff;
 					padding: 30px;
-					border-radius: 70px;
-					box-shadow: 1px 1px 20px 3px #000, inset 0 0 5px 0 #000;
+					border-radius: 5px;
+					box-shadow: 1px 1px 20px 3px #000, inset 0 0 2px 0 #000;
 					@media screen and (max-width: 600px) {
     						padding: 10px;
     						border-radius: 20px;
@@ -282,28 +378,39 @@ $color-4-d: #006666;
 				//this scss/css is for the "MAIN" content
 
 					.profile-img {
-						background: url(images/beach_pic2.jpg);
+						background: url(images/beach_pic2.jpg) no-repeat;
 						background-size: 100% 100%;
-						box-shadow: 1px 1px 5px 2px #555;
-  						-webkit-transform: translate(-40px, -40px);
-  						transform: translate(-10px, -10px);
-  						margin: 0 10px 10px 0;
+						box-shadow: 1px 1px 3px 0 #000;
+  						margin: 25px 30px 0 25px;
+						float: left;
+						display: inline-block;
+						width: 200px;
+						height: 200px;
+						border-radius: 125px;
+						//border: 15px solid hsla(120, 60%, 0%, 0.5);
+						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #aaa;
+						
+					}
+					.pic {
+						background-size: 100% 100%;
+  						margin: 0 20px 0 0;
 						float: left;
 						display: inline-block;
 						width: 250px;
 						height: 250px;
-						border-radius: 125px;
-
-						@media screen and (max-width: 860px) {
-    						display: none;
-  						}
 					}
 					.skills {
-						margin-top: 0px;
-						color: #222;
+						margin-top: 25px;
+						padding: 10px;
+						color: #fff;
 						font-size: 2em;
-						text-shadow: 1px 1px 1px #999;
-						line-height: 32px;
+						text-shadow: 1px 1px 1px #000;
+						background: #999;
+						background: hsla(120, 60%, 0%, 0.5);
+						display: inline-block;
+						width:700px;
+						border-radius: 5px;
+						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #777;
 						@media screen and (max-width: 600px) {
     						font-size: 1.5em;
     						line-height: 22px;
@@ -313,27 +420,107 @@ $color-4-d: #006666;
 					}
 					.resume {
 						button {
+							display: none;
 							float: right;
-							height: 50px;
+							height: 40px;
 							width: 100px;
 							background-color: #384d7a;
 							font-size: 1.8em;
 							color: #fff;
 							text-shadow: 1px 1px 5px #000;
-							border-radius: 25px;
-							box-shadow: 2px 2px 5px 2px #000;
+							border-radius: 10px;
+							box-shadow: 1px 1px 3px 1px #000;
 							cursor: pointer;
-							-webkit-transform: translate(-40px, -40px);
-  							transform: translate(14px, -15px);
   							@media screen and (max-width: 600px) {
-    							-webkit-transform: translate(0, 0);
-  								transform: translate(0, 0);
   								width: auto;
   								height: auto;
   								padding: 5px 10px;
   							}
 							&:hover {
-								box-shadow: 2px 2px 6px 3px #000;
+							}
+						}
+					}
+
+					ul.slide-content {
+						position: relative;
+						z-index: 10;
+						overflow: hidden;
+						height: 250px;
+						padding: 30px 10px;
+						margin-bottom: 20px;
+						//border: 1px solid red;
+						li {
+							display: none;
+							height: 250px;
+							margin-bottom: 40px;
+							position: relative;
+							z-index: -10;
+						}
+						
+						.profile-slide {
+							background: url(images/san_diego.jpg);
+							background-size: 100% 100%;
+							border-radius: 3px;
+							box-shadow: 2px 2px 10px 0 #000, inset 0 0 3px 0 #000;
+						}
+
+						.fade-top {
+							box-shadow: 0 0 20px 20px #fff;
+							width: 100%;
+							position: absolute;
+							top: 0;
+						}
+						.fade-bottom {
+							box-shadow: 0 0 20px 20px #fff;
+							width: 100%;
+							position: absolute;
+							bottom: 0;
+						}
+						.app {
+							.box {
+								display: inline-block;
+								text-align: center;
+								width: 250px;
+								height: 200px;
+								p {
+									font-size: 20px;
+									padding: 10px 0 10px 0;
+									font-family: "Open Sans";
+								}
+								img {
+									width: 120px;
+									height: 120px;
+									float: none;
+									background-size: 100% 100%;
+									margin: 0;
+									border-radius: 5px;
+								}
+							}
+							.title {
+								font-size: 35px;
+								font-family: "Roboto";
+							}
+						}
+						.quote-moon {
+							border-radius: 3px;
+							box-shadow: 2px 2px 10px 0 #000, inset 0 0 3px 0 #000;
+							background: url(images/moon_pic.jpg) no-repeat;
+							background-size: 100% 100%;
+							p {
+								text-align: center;
+								width: 400px;
+								font-size: 19px;
+								padding: 30px 0 10px 50px;
+								font-family: "Open Sans";
+								color: #fff;
+
+								span {
+									line-height: 40px;
+									font-family: "Times New Roman",Times,Arial,sans-serif;
+									font-size: 18px;
+									color: #eee;
+									font-weight: 100;
+								}
 							}
 						}
 					}
@@ -347,18 +534,17 @@ $color-4-d: #006666;
 					list-style-type: none;
 				}
 				.wrapper {
-					background: url(images/darkwood2.jpg);
-					border-radius: 40px;
-					border: 1px solid #fff;
+					background: url(images/repeat2.jpg);
+					border-radius: 5px 5px 5px 5px;
 					padding: 20px;
 					margin: 20px;
-					box-shadow: 2px 2px 10px 2px #000;
+					box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000;
 					@media screen and (max-width: 700px) {
 						margin: 20px 0;
   						}
 					
 					h2 {
-						font-size: 3.5em;
+						font-size: 2.5em;
 						text-shadow: 1px 1px 5px #000;
 						font-weight: bold;
 						color: #fff;
@@ -372,14 +558,21 @@ $color-4-d: #006666;
   						}
 					}
 					p {
-						color: #aaa;
+						color: #ccc;
 						font-weight: bold;
-						font-size: 1.7em;
+						font-size: 1.5em;
 						font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 						text-shadow: 1px 1px 3px #000;
 						@media screen and (max-width: 450px) {
 							font-size: 1.4em;
   						}
+					}
+					img {
+						margin-right: 50px;
+						border-radius: 5px;
+						float: right;
+						width: 110px;
+						height: 110px;
 					}
 					.technologies {
 						border: 1px solid #aaa;
@@ -387,7 +580,7 @@ $color-4-d: #006666;
 						display: inline-block;
 						border-radius: 10px;
 						margin-top: 10px;
-						background-color: #222;
+						background-color: hsla(120, 60%, 0%, 0.5);
 						box-shadow: 2px 2px 5px 2px #000;
 
 
@@ -406,7 +599,7 @@ $color-4-d: #006666;
 						font-size: 1.8em;
 						color: #fff;
 						text-shadow: 1px 1px 5px #000;
-						border-radius: 20px;
+						border-radius: 10px;
 						box-shadow: 2px 2px 5px 2px #000;
 						margin-right: 10px;
 						margin-top: 10px;
