@@ -17,7 +17,7 @@ h3 {
 	font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 body {
-	background: url(images/texture_5.jpg);
+	background: url(images/texture_7.jpg);
 }
 
 //new colors
@@ -76,6 +76,12 @@ $color-4-d: #006666;
     	margin-bottom: 20px;
     	padding: 10px;
   	}
+}
+@mixin zoomOnHover (){
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
 }
 @-webkit-keyframes nameSlide {
     from {transform: matrix(1,0.5,0,10,-500,0);
@@ -190,11 +196,11 @@ body > .wrapper {
 
 
 .header {
-	background: url(images/repeat6.jpg);
+	background: url(images/repeat2.jpg);
 	width: 1100px;
-	height: 110px;
+	height: 130px;
 	background-color: #fff;
-	box-shadow: 0 0 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
+	box-shadow: 2px 2px 20px 5px #000, inset 0 0 5px 0 #000;
 	margin: 10px auto 0 auto;
 	padding-bottom: 20px;
 	border-radius: 5px;
@@ -204,7 +210,9 @@ body > .wrapper {
   		}
 
 	.name-logo {
-		padding: 10px 0 0 20px;
+		float: left;
+		display: inline-block;
+		padding: 20px 0 0 20px;
 		position: relative;
 		&:hover {
 			cursor: pointer;
@@ -215,6 +223,68 @@ body > .wrapper {
   		}
 	}
 }
+
+
+ul.list-options {
+			float: right;
+			display: inline-block;
+			margin-top: 15px;
+			width: 400px;
+			list-style-type: none;
+			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+			@media screen and (max-width: 1100px) {
+    			
+  			}
+			@media screen and (max-width: 640px) {
+    			padding: 10px 0;
+    			margin-bottom: 10px;
+    			background: none;
+  			}
+				li.parent-3d {
+					position: relative;
+					perspective: 200px;
+					text-align: center;
+					display: inline-block;
+					width: 120px;
+					margin: 0px 3px;
+					height: 120px;
+					@media screen and (max-width: 880px) {
+  					}
+					@media screen and (max-width: 640px) {
+  					}
+					&:hover {
+						cursor: pointer;
+					}
+					.child-3d {
+						opacity: 0;
+						width: 120px;
+						height: 120px;
+						border-radius: 5px;
+						box-shadow: 1px 1px 3px 3px #000, inset 0 0 3px 0 #000;
+						//background: url(images/repeat4.jpg);
+						p {
+							padding-top: 20px;
+							pointer-events: none;
+							color: #000;
+							font-size: 22px;
+						}
+						
+					}
+
+				}
+				.projects .child-3d {
+					background: url(images/iconp1.jpg);
+					background-size: 100% 100%;
+				}	
+				.interests .child-3d {
+					background: url(images/iconi1.jpg);
+					background-size: 100% 100%;
+				}	
+				.contact .child-3d {
+					background: url(images/iconc1.jpg);
+					background-size: 100% 100%;
+				}	
+		}
 .main-content {
 	//background: url(images/bamboo_pattern.jpg) repeat;
 	width: 1100px;
@@ -246,81 +316,8 @@ body > .wrapper {
 		}
   	}
   		.main-list-wrap {
-  			background: url(images/granite2.jpg) repeat;
-  			padding: 10px;
-  			border-radius: 5px;
-  			box-shadow: 0 0 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 0 #000;
-  			#looking-for-work {
-  				padding: 10px;
-  				padding-top: 15px;
-  				width: 400px;
-				display: inline-block;
-				text-align: center;
-				p {
-					color: #fff;
-					font-size: 22px;
-					//font-weight: 500;
-					text-shadow: 1px 1px 2px #000;
-					font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-				}
-				p.name {
-					padding-top: 10px;
-					font-family: "Times New Roman",Times,Arial,sans-serif;
-					font-size: 16px;
-					span {
-						color: #ddd;
-						font-weight: 100;
-					}
-				}
-			}
+  			border: 1px solid red;
   		}
-		ul.list-options {
-			float: left;
-			display: inline-block;
-			width: 650px;
-			list-style-type: none;
-			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-			@media screen and (max-width: 1100px) {
-    			
-  			}
-			@media screen and (max-width: 640px) {
-    			padding: 10px 0;
-    			margin-bottom: 10px;
-    			background: none;
-  			}
-				li.parent-3d {
-					perspective: 200px;
-					text-align: center;
-					display: inline-block;
-					width: 120px;
-					margin: 0px 3px;
-					height: 120px;
-					@media screen and (max-width: 880px) {
-  					}
-					@media screen and (max-width: 640px) {
-  					}
-					&:hover {
-						cursor: pointer;
-					}
-					.child-3d {
-						opacity: 0;
-						text-shadow: 1px 1px 2px #000;
-						text-align: center;
-						border-radius: 3px;
-						box-shadow: 1px 1px 5px 2px #000, inset 0 0 5px 0 #000;
-						width: 120px;
-						height: 120px;
-						background: url(images/repeat4.jpg);
-						p {
-							padding-top: 45px;
-							pointer-events: none;
-							color: #fff;
-							font-size: 20px;
-						}
-					}
-
-				}			
-		}
 	.current-content {
 		padding: 10px 0;
 		@media screen and (max-width: 1100px) {
@@ -439,6 +436,16 @@ body > .wrapper {
 							&:hover {
 							}
 						}
+					}
+					.text-pic-right {
+						background: url(images/wave.jpg);
+						 background-size: 100% 100%;
+						 box-shadow: 1px 1px 5px 0 #222;
+						margin: 20px 0 0 20px;
+						width: 500px;
+						height: 300px;
+						float: right;
+						border-radius: 5px;
 					}
 
 					ul.slide-content {
@@ -673,62 +680,47 @@ body > .wrapper {
 
 				//"CONTACT" content below
 
-				.contact-content {
-					div.contact-label {
-						@include sectionLabel();
-						@include gradientHue($color2-1-md, $color2-1-d);
+				.contact {
+					background: url(images/repeat3.jpg);
+					margin: 50px 0 20px 0;
+					padding: 20px;
+					height: 230px;
+					border-radius: 5px;
+					box-shadow: 1px 1px 5px 2px #000, inset 0 0 3px 0 #000;
+					text-align: center;
+					h2 {
+						padding-top: 100px;
+						margin-bottom: -130px;
+						text-shadow: 1px 1px 2px #000;
+						color: #fff;
+						font-size: 70px;
+						pointer-events: none;
 					}
-					.contact-wrap {
-						background: url(images/darkwood2.jpg);
+					.email {
+						float: left;
+						background: url(images/email.png);
 						background-size: 100% 100%;
-						margin-bottom: 20px;
-						margin-top: 10px;
-						padding: 10px;
-						border-radius: 60px;
-						box-shadow: 1px 1px 10px 2px #000, inset 0 0 5px 0 #000;
-						border: 1px solid #999;
+						display: inline-block;
+						height: 230px;
+						width: 230px;
 						&:hover {
 							cursor: pointer;
-						}
-						&:hover img {
-							-webkit-animation-name: buttonHover;
-    	                	-webkit-animation-duration: 0.2s;
-    	                	-webkit-animation-fill-mode: forwards;
-							
-						}
-						img {
-							display: inline-block;
-							height: 100px;
-							width: 100px;
-							float: left;
-							@media screen and (max-width: 600px) {
-    							height: 50px;
-    							width: 50px;
-  							}
-  							@media screen and (max-width: 400px) {
-    							height: 25px;
-    							width: 25px;
-  							}
-						}
-						h3 {
-							display: inline-block;
-							font-size: 2.2em;
-							margin: 40px 0 0 20px;
-							color: #fff;
-							text-shadow: 2px 2px 5px #000;
-							@media screen and (max-width: 600px) {
-								display: block;
-								text-align: center;
-    							margin: 20px 0 0 0;
-    							font-size: 1.7em;
-  							}
-  							@media screen and (max-width: 400px) {
-    							margin: 5px 0 0 0;
-    							font-size: 1.5em;
-  							}
+							@include zoomOnHover;
 						}
 					}
-
+					.phone {
+						float: right;
+						background: url(images/phone.png);
+						background-size: 100% 100%;
+						display: inline-block;
+						height: 230px;
+						width: 230px;
+						&:hover {
+							cursor: pointer;
+							@include zoomOnHover;
+						}
+					}
+					
 				}
 
 				//"INTERESTS" content below

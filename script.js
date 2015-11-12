@@ -12,16 +12,34 @@ $(window).load(function(){
 });
 $(document).ready(function(){
 	$('.projects').click(function() {
-  	loadXMLDoc("projects.txt","change-content");
+  		loadXMLDoc("projects.txt","change-content");
 	});
 	$('.videos').click(function() {
-  	loadXMLDoc("videos.txt","change-content");
+  		loadXMLDoc("videos.txt","change-content");
 	});
 	$('.contact').click(function() {
-  	loadXMLDoc("contact.txt","change-content");
+  		loadXMLDoc("home.html","change-content");
+    	$('html, body').animate({ scrollTop: 1000 }, 'slow');
 	});
 	$('.interests').click(function() {
-  	loadXMLDoc("interests.txt","change-content");
+  		loadXMLDoc("interests.txt","change-content");
+	});
+
+	$('.contact .email').on('mouseenter', function(){
+		$('.contact h2').fadeOut(200);
+		setTimeout(function(){$('.contact h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
+	});
+	$('.contact .email').on('mouseleave', function(){
+		$('.contact h2').fadeOut(200);
+		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
+	});
+	$('.contact .phone').on('mouseenter', function(){
+		$('.contact h2').fadeOut(200);
+		setTimeout(function(){$('.contact h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
+	});
+	$('.contact .phone').on('mouseleave', function(){
+		$('.contact h2').fadeOut(200);
+		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
 });
 
@@ -49,8 +67,8 @@ function loadXMLDoc(url, elementId){
 
 //Animated main menu
 var boxSize=120;	//boxSize should be set to the size of your animated element.
-var scaleSize=1.05; 	//scaleSize should be set to desired amount of zoom on hover.
-var scale3d=30;		//scale3d should be set to the amount of 3d effect on cursor hover.
+var scaleSize=1.07; 	//scaleSize should be set to desired amount of zoom on hover.
+var scale3d=40;		//scale3d should be set to the amount of 3d effect on cursor hover.
 $(document).mousemove(function(e){
     var divPos={};
     var offset;

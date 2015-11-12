@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chris Gramme</title>
-	<link rel='stylesheet' href='main.css' media="screen">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:300,400|Raleway:400,300,700' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-</head>
-<body>
-	<div class="wrapper">
-		<div class="header">
-			<img src="images/chris_gramme.png" alt="Chris Gramme logo" class="name-logo" onclick="location.href='index.html'">
-			<div class="main-list-wrap">
-				<ul class="list-options">
-					<li class="parent-3d projects"><div class="child-3d"><p>Projects</p></div></li>
-					<li class="parent-3d interests"><div class="child-3d"><p>Interests</p></div></li>
-					<li class="parent-3d contact"><div class="child-3d"><p>Contact</p></div></li>
-				</ul>
-				<div class="clear"></div>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<div class="main-content">
-			<div id="change-content" class="current-content">
-				<div class="main-wrap wrap">
+<div class="main-wrap wrap">
 					<ul class="slide-content">
 						<div class="fade-top"></div>
 						<li class="slides profile-slide">
@@ -71,10 +47,3 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
-	<script type='text/javascript' src='script.js'></script>
-</body>
-</html>
