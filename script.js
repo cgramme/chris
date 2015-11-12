@@ -23,25 +23,25 @@ $(document).ready(function(){
 	});
 	$('.interests').click(function() {
   		loadXMLDoc("interests.txt","change-content");
+  		slideContent(10000);
 	});
 
-	$('.contact .email').on('mouseenter', function(){
+});
+
+$(document).on('mouseenter', '.contact .email', function(){
 		$('.contact h2').fadeOut(200);
 		setTimeout(function(){$('.contact h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
-	});
-	$('.contact .email').on('mouseleave', function(){
+	}).on('mouseleave', '.contact .email', function(){
 		$('.contact h2').fadeOut(200);
 		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
-	$('.contact .phone').on('mouseenter', function(){
+	$(document).on('mouseenter', '.contact .phone', function(){
 		$('.contact h2').fadeOut(200);
 		setTimeout(function(){$('.contact h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
-	});
-	$('.contact .phone').on('mouseleave', function(){
+	}).on('mouseleave', '.contact .phone', function(){
 		$('.contact h2').fadeOut(200);
 		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
-});
 
 $(document).on('click', '.android', function () {
     loadXMLDoc("android.txt","change-content");
@@ -102,13 +102,9 @@ $(document).mousemove(function(e){
 //Welcome text and recommendation for courses animated sliding text
 //time variable sets pause between each message
 function slideContent(time){
-
 	var i = 0;
 	var listLength = $('.slide-content .slides').length;
 	$('.slides:first').show();
-	var firstItem = $('.slides:first').clone();
-	//alert(firstItem.html());
-
 	setInterval(function(){ 
 		if(i===listLength-1){
 			setTimeout(function(){
