@@ -18,7 +18,7 @@ $(document).ready(function(){
   		loadXMLDoc("videos.txt","change-content");
 	});
 	$('.contact').click(function() {
-  		loadXMLDoc("home.html","change-content");
+  		loadXMLDoc("home.txt","change-content");
     	$('html, body').animate({ scrollTop: 1000 }, 'slow');
 	});
 	$('.interests').click(function() {
