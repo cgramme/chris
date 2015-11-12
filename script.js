@@ -21,12 +21,13 @@ $(document).ready(function(){
   		loadXMLDoc("home.txt","change-content");
     	$('html, body').animate({ scrollTop: 1000 }, 'slow');
 	});
-	$('.interests').click(function() {
+
+});
+
+$(document).on('click', '.interests', function() {
   		loadXMLDoc("interests.txt","change-content");
   		slideContent(10000);
 	});
-
-});
 
 $(document).on('mouseenter', '.contact .email', function(){
 		$('.contact h2').fadeOut(200);
