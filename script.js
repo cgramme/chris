@@ -1,5 +1,7 @@
+var intertV;
+
 $(window).load(function(){
-	slideContent(10000);
+	slideContent(5000);
 	setTimeout(function(){
 		$('.wrapper').addClass('fade-in');
 	},100);
@@ -17,31 +19,29 @@ $(document).ready(function(){
 	$('.videos').click(function() {
   		loadXMLDoc("videos.txt","change-content");
 	});
-	$('.contact').click(function() {
-  		loadXMLDoc("home.txt","change-content");
-    	$('html, body').animate({ scrollTop: 1000 }, 'slow');
+	$('.interests').click(function() {
+  		loadXMLDoc("interests.txt","change-content");
 	});
 
 });
 
-$(document).on('click', '.interests', function() {
-  		loadXMLDoc("interests.txt","change-content");
-  		slideContent(10000);
-	});
+$(document).on('click', '.contact', function() {
+    $('html, body').animate({ scrollTop: 2000 }, 'slow');
+});
 
-$(document).on('mouseenter', '.contact .email', function(){
-		$('.contact h2').fadeOut(200);
-		setTimeout(function(){$('.contact h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
-	}).on('mouseleave', '.contact .email', function(){
-		$('.contact h2').fadeOut(200);
-		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
+$(document).on('mouseenter', '.footer .email', function(){
+		$('.footer h2').fadeOut(200);
+		setTimeout(function(){$('.footer h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
+	}).on('mouseleave', '.footer .email', function(){
+		$('.footer h2').fadeOut(200);
+		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
-	$(document).on('mouseenter', '.contact .phone', function(){
+	$(document).on('mouseenter', '.footer .phone', function(){
 		$('.contact h2').fadeOut(200);
-		setTimeout(function(){$('.contact h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
-	}).on('mouseleave', '.contact .phone', function(){
-		$('.contact h2').fadeOut(200);
-		setTimeout(function(){$('.contact h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
+		setTimeout(function(){$('.footer h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
+	}).on('mouseleave', '.footer .phone', function(){
+		$('.footer h2').fadeOut(200);
+		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
 
 $(document).on('click', '.android', function () {
@@ -103,17 +103,18 @@ $(document).mousemove(function(e){
 //Welcome text and recommendation for courses animated sliding text
 //time variable sets pause between each message
 function slideContent(time){
+	$('.slides:first').show();
 	var i = 0;
 	var listLength = $('.slide-content .slides').length;
-	$('.slides:first').show();
-	setInterval(function(){ 
+	intertV = setInterval(function(){ 
 		if(i===listLength-1){
 			setTimeout(function(){
 				$('.slides:nth('+(i)+')').hide();
-				$('.slides:first').removeClass('translate-y-out').fadeIn(2000);
+				$('.slides:first').css({'opacity':'0'}).show().removeClass('translate-y-out').addClass('fade-in-slow');
 				i=0;
 			},0);
 		}else{
+			$('.slides:first').css({'opacity':'1'}).removeClass('translate-y-out, fade-in-slow');
 			$('.slides:nth('+(i+1)+')').show();
 			setTimeout(function(){
 				$('.slides:nth('+(i-1)+')').hide();
@@ -123,6 +124,7 @@ function slideContent(time){
 			},100);
 		}
 	}, time);
+	intertV;
 }
 
 
