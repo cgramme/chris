@@ -15,18 +15,17 @@ $(window).load(function(){
 $(document).ready(function(){
 	$('.projects').click(function() {
   		loadXMLDoc("projects.txt","change-content");
-	});
-	$('.videos').click(function() {
-  		loadXMLDoc("videos.txt","change-content");
+  		$('.home-icon').show().addClass('fade-in-slow');
 	});
 	$('.interests').click(function() {
   		loadXMLDoc("interests.txt","change-content");
+  		$('.home-icon').show().addClass('fade-in-slow');
 	});
 
 });
 
 $(document).on('click', '.contact', function() {
-    $('html, body').animate({ scrollTop: 2000 }, 'slow');
+    $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
 });
 
 $(document).on('mouseenter', '.footer .email', function(){

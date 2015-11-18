@@ -226,6 +226,21 @@ body > .wrapper {
     		padding: 10px 0 0 0;
   		}
 	}
+	.home-icon {
+		display: none;
+		opacity: 0;
+		 background: url(images/home.png);
+		 width: 40px;
+		 height: 40px;
+		 background-size: 100% 100%;
+		 position: absolute;
+		 float: left;
+		 margin-left: 5px;
+		 margin-top: 105px;
+		 &:hover {
+		 	cursor: pointer;
+		 }
+	}
 }
 
 
