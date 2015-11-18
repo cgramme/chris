@@ -571,10 +571,10 @@ ul.list-options {
               height: 50px;
               width: 100px; } }
         .main-content .current-content .wrap .interests-content img.computer {
-          float: right; }
+          float: left;
+          margin-right: 10px; }
         .main-content .current-content .wrap .interests-content img.mountain {
-          margin-right: 10px;
-          float: left; }
+          float: right; }
 
 .footer {
   background: url(images/repeat3.jpg);
