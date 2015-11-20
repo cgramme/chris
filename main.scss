@@ -211,9 +211,13 @@ body > .wrapper {
   	@media screen and (max-width: 1100px) {
     		border-radius: 0;
     		width: 100%;
+    		height: auto;
+    		margin: 0;
+    		padding-bottom: 10px;
   		}
 
 	.name-logo {
+		width: 520px;
 		float: left;
 		display: inline-block;
 		padding: 20px 0 0 20px;
@@ -221,9 +225,14 @@ body > .wrapper {
 		&:hover {
 			cursor: pointer;
 		}
+		@media screen and (max-width: 965px) {
+			float: none;
+			display: block;
+			margin: auto;
+			padding: 10px 0;
+		}
 		@media screen and (max-width: 590px) {
     		width: 100%;
-    		padding: 10px 0 0 0;
   		}
 	}
 	.home-icon {
@@ -251,22 +260,23 @@ ul.list-options {
 			width: 400px;
 			list-style-type: none;
 			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-			@media screen and (max-width: 1100px) {
-    			
+			@media screen and (max-width: 965px) {
+    			float: none;
+    			display: block;
+    			margin: auto;
+    			text-align: center;
   			}
-			@media screen and (max-width: 640px) {
-    			padding: 10px 0;
-    			margin-bottom: 10px;
-    			background: none;
+			@media screen and (max-width: 400px) {
+    			width: 100%;
   			}
 				li.parent-3d {
 					position: relative;
 					perspective: 200px;
 					text-align: center;
 					display: inline-block;
-					width: 120px;
-					margin: 0px 3px;
-					height: 120px;
+					//width: 120px;
+					//margin: 0px 3px;
+					//height: 120px;
 					@media screen and (max-width: 880px) {
   					}
 					@media screen and (max-width: 640px) {
@@ -280,12 +290,22 @@ ul.list-options {
 						height: 120px;
 						border-radius: 5px;
 						box-shadow: 1px 1px 3px 3px #000, inset 0 0 3px 0 #000;
-						//background: url(images/repeat4.jpg);
+						@media screen and (max-width: 405px) {
+
+						}
 						p {
 							padding-top: 20px;
 							pointer-events: none;
 							color: #000;
 							font-size: 22px;
+							@media screen and (max-width: 400px) {
+								font-size: 18px;
+								padding-top: 15px;
+							}
+							@media screen and (max-width: 330px) {
+								font-size: 16px;
+								padding-top: 10px;
+							}
 						}
 						
 					}
@@ -305,21 +325,12 @@ ul.list-options {
 				}	
 		}
 .main-content {
-	//background: url(images/bamboo_pattern.jpg) repeat;
-	width: 1100px;
-	min-height: 500px;
-	margin: 10px auto;
-	//padding: 15px;
-	border-radius: 5px;
-	border: 0px solid #fff;
+	margin: auto;
 	//box-shadow: 2px 2px 50px 10px #000, 1px 1px 5px 1px #000, inset 0 0 5px 1px #333;
 	@media screen and (max-width: 1100px) {
     	width: 100%;
-    	border-radius: 0;
-    	padding: 15px 0;
   	}
   	@media screen and (max-width: 640px) {
-    	padding: 0 0 10px 0;
 
     	.projects {
 			@include gradientHue($color2-1-l, $color2-1-lm);
@@ -334,38 +345,23 @@ ul.list-options {
 			@include gradientHue($color2-1-md, $color2-1-d);
 		}
   	}
-  		.main-list-wrap {
-  			border: 1px solid red;
-  		}
+  		
 	.current-content {
-		padding: 10px 0;
 		@media screen and (max-width: 1100px) {
-    		padding: 0 10px;
+    		//padding: 0 10px;
   		}
 
 		//The class of "wrap" will be the container for all ajax content requests
-		.main-wrap.wrap {
-					background-color: #fff;
-					padding: 30px;
-					padding-top: 5px;
-					border-radius: 5px;
-					//box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
-					@media screen and (max-width: 860px) {
-    						border-radius: 40px;
-  						}
-					@media screen and (max-width: 600px) {
-    						padding: 10px;
-    						border-radius: 20px;
-  						}
-				}
+		
 			.wrap {
 					background-color: #fff;
 					padding: 30px;
 					border-radius: 5px;
 					box-shadow: 1px 1px 20px 3px #000, inset 0 0 2px 0 #000;
-					@media screen and (max-width: 600px) {
-    						padding: 10px;
-    						border-radius: 20px;
+					@media screen and (max-width: 1100px) {
+    						border-radius: 0;
+    						width: 96%;
+    						padding: 2%;
   						}
 					
 				h2 {
@@ -465,6 +461,13 @@ ul.list-options {
 						height: 300px;
 						float: right;
 						border-radius: 5px;
+						@media screen and (max-width: 800px) {
+							height: 200px;
+							width: 300px;
+						}
+						@media screen and (max-width: 550px) {
+							display: none;
+						}
 					}
 
 					ul.slide-content {
@@ -712,6 +715,11 @@ ul.list-options {
 	border-radius: 5px;
 	box-shadow: 1px 1px 5px 2px #000, inset 0 0 3px 0 #000;
 	text-align: center;
+	@media screen and (max-width: 1100px) {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
 	h2 {
 		line-height: 0px;
 		padding-top: 60px;
