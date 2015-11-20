@@ -1,7 +1,7 @@
 var intertV;
 
 $(window).load(function(){
-	slideContent(10000);
+	slideContent(100000);
 	setTimeout(function(){
 		$('.wrapper').addClass('fade-in-slow');
 	},100);
@@ -35,17 +35,17 @@ $(document).on('click', '.contact', function() {
     $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
 });
 
-$(document).on('mouseenter', '.footer .email', function(){
+$(document).on('mouseenter', '.large-icon.email', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
-	}).on('mouseleave', '.footer .email', function(){
+	}).on('mouseleave', '.large-icon.email', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
-$(document).on('mouseenter', '.footer .phone', function(){
+$(document).on('mouseenter', '.large-icon.phone', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
-	}).on('mouseleave', '.footer .phone', function(){
+	}).on('mouseleave', '.large-icon.phone', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
@@ -154,7 +154,13 @@ function resizeWindow() {
 		$('.child-3d').width(120).height(120).css({'margin':'0 5px'});
 	}
 
-	
+	if(width<800) {
+		$('.footer h2').hide();
+	}else{
+		$('.footer h2').show();
+	}
+
+
 }
 
 $(window).resize(function() {

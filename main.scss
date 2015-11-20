@@ -249,6 +249,16 @@ body > .wrapper {
 		 &:hover {
 		 	cursor: pointer;
 		 }
+		 @media screen and (max-width: 1100px) {
+		 	position: absolute;
+		 	top: 0;
+		 	right: 0;
+		 	margin: 0;
+		 }
+		 @media screen and (max-width: 380px) {
+		 	width: 30px;
+		 	height: 30px;
+		 }
 	}
 }
 
@@ -358,10 +368,13 @@ ul.list-options {
 					padding: 30px;
 					border-radius: 5px;
 					box-shadow: 1px 1px 20px 3px #000, inset 0 0 2px 0 #000;
+					width: 1040px;
+					margin: 10px auto;
 					@media screen and (max-width: 1100px) {
     						border-radius: 0;
     						width: 96%;
     						padding: 2%;
+    						margin: 0;
   						}
 					
 				h2 {
@@ -401,6 +414,10 @@ ul.list-options {
 						border-radius: 125px;
 						//border: 15px solid hsla(120, 60%, 0%, 0.5);
 						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #aaa;
+						@media screen and (max-width: 1100px) {
+							display: none;
+						}
+
 						
 					}
 					.pic {
@@ -423,12 +440,35 @@ ul.list-options {
 						width:700px;
 						border-radius: 5px;
 						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #777;
+						text-align: left;
+						@media screen and (max-width: 1100px) {
+							margin: 0;
+							width: 94%;
+							font-size: 2.2em;
+						}
 						@media screen and (max-width: 600px) {
-    						font-size: 1.5em;
-    						line-height: 22px;
+							width: 92%;
+    						font-size: 2em;
+    						line-height: 28px;
     						margin-top: 0;
   						}
-  						
+  						@media screen and (max-width: 550px) {
+  							font-size: 1.8em;
+  							line-height: 28px;
+  						}
+  						@media screen and (max-width: 500px) {
+  							font-size: 1.6em;
+  							line-height: 25px;
+  							padding: 5px;
+  						}
+  						@media screen and (max-width: 350px) {
+  							font-size: 1.4;
+  							line-height: 23px;
+  							padding: 2px;
+  						} 	
+  						@media screen and (max-width: 300px) {
+  							line-height: 20px;
+  						}					
 					}
 					.resume {
 						button {
@@ -477,7 +517,9 @@ ul.list-options {
 						height: 250px;
 						padding: 30px 10px;
 						margin-bottom: 20px;
-						//border: 1px solid red;
+						@media screen and (max-width: 800px) {
+							padding: 30px 2px;
+						}
 						li {
 							display: none;
 							height: 250px;
@@ -491,6 +533,16 @@ ul.list-options {
 							background-size: 100% 100%;
 							border-radius: 3px;
 							box-shadow: 2px 2px 10px 0 #000, inset 0 0 3px 0 #000;
+							display: block;
+							text-align: left;
+							@media screen and (max-width: 1100px) {
+								background: url(images/atlanta2.jpg);
+								background-size: 100% 100%;
+								box-shadow: 1px 1px 2px 0 #000, inset 0 0 3px 0 #000;
+								display: table-cell;
+								vertical-align: middle;
+								text-align: center;
+							}
 						}
 
 						.fade-top {
@@ -720,6 +772,21 @@ ul.list-options {
 		padding: 0;
 		margin: 0;
 	}
+	.contact-container {
+		height: 55px;
+		margin-top: 5px;
+		padding-left: 5px;
+		display: none;
+		@media screen and (max-width: 800px) {
+			display: block;
+		}
+	}
+	.large-icon {
+		display: inline-block;
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
+	}
 	h2 {
 		line-height: 0px;
 		padding-top: 60px;
@@ -728,6 +795,22 @@ ul.list-options {
 		color: #fff;
 		font-size: 70px;
 		pointer-events: none;
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
+	}
+	p {
+		padding-top: 10px;
+		color: #fff;
+		font-size: 25px;
+		display: none;
+		@media screen and (max-width: 800px) {
+			display: inline-block;
+		}
+		@media screen and (max-width: 360px) {
+			font-size: 16px;
+			padding-top: 15px;
+		}
 	}
 	.email {
 		float: left;
@@ -739,6 +822,9 @@ ul.list-options {
 		&:hover {
 			cursor: pointer;
 			@include zoomOnHover;
+		}
+		@media screen and (max-width: 800px) {
+			display: none;
 		}
 	}
 	.phone {
@@ -752,7 +838,27 @@ ul.list-options {
 			cursor: pointer;
 			@include zoomOnHover;
 		}
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
 	}
+	.phone-small{
+		float: left;
+		background: url(images/phone.png);
+		background-size: 100% 100%;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+	}
+	.email-small{
+		float: left;
+		background: url(images/email.png);
+		background-size: 100% 100%;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+	}
+
 	
 }
 
