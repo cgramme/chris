@@ -28,6 +28,13 @@ $(document).ready(function(){
   		alert($(window).width());
 	});
 
+	$('li.parent-3d').on('click', function(){
+        $(this).addClass('fall-out').delay(2000).queue(function(next){
+            $(this).addClass('fall-in').removeClass('fall-out');
+            next();
+        });
+    });
+
 
 
 });
