@@ -722,9 +722,8 @@ ul.list-options {
   						}
 					}
 					img {
-						margin-left: 20px;
+						margin: 5px;
 						border-radius: 5px;
-						float: left;
 						width: 110px;
 						height: 110px;
 						@media screen and (max-width: 800px) {
@@ -791,7 +790,7 @@ ul.list-options {
 						display: inline-block;
 						@media screen and (max-width: 600px) {
     						height: 100px;
-    						width: 200px;
+    						width: 170px;
   						}
 					}
 					img.computer {
@@ -800,6 +799,7 @@ ul.list-options {
 					}
 					img.mountain {
 						float: right;
+						margin-left: 5px;
 					}
 				}
 

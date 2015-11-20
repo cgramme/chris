@@ -609,9 +609,8 @@ ul.list-options {
           .main-content .current-content .wrap .wrapper p {
             font-size: 1.4em; } }
       .main-content .current-content .wrap .wrapper img {
-        margin-left: 20px;
+        margin: 5px;
         border-radius: 5px;
-        float: left;
         width: 110px;
         height: 110px; }
         @media screen and (max-width: 800px) {
@@ -689,12 +688,13 @@ ul.list-options {
         @media screen and (max-width: 600px) {
           .main-content .current-content .wrap .interests-content img {
             height: 100px;
-            width: 200px; } }
+            width: 170px; } }
       .main-content .current-content .wrap .interests-content img.computer {
         float: left;
         margin-right: 10px; }
       .main-content .current-content .wrap .interests-content img.mountain {
-        float: right; }
+        float: right;
+        margin-left: 5px; }
 
 .footer {
   background: url(images/repeat3.jpg);
