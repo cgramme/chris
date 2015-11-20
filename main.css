@@ -609,11 +609,15 @@ ul.list-options {
           .main-content .current-content .wrap .wrapper p {
             font-size: 1.4em; } }
       .main-content .current-content .wrap .wrapper img {
-        margin-right: 50px;
+        margin-left: 20px;
         border-radius: 5px;
-        float: right;
+        float: left;
         width: 110px;
         height: 110px; }
+        @media screen and (max-width: 800px) {
+          .main-content .current-content .wrap .wrapper img {
+            width: 70px;
+            height: 70px; } }
       .main-content .current-content .wrap .wrapper .technologies {
         border: 1px solid #aaa;
         padding: 7px;
@@ -684,8 +688,8 @@ ul.list-options {
         display: inline-block; }
         @media screen and (max-width: 600px) {
           .main-content .current-content .wrap .interests-content img {
-            height: 50px;
-            width: 100px; } }
+            height: 100px;
+            width: 200px; } }
       .main-content .current-content .wrap .interests-content img.computer {
         float: left;
         margin-right: 10px; }
