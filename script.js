@@ -1,7 +1,7 @@
 var intertV;
 
 $(window).load(function(){
-	slideContent(5000);
+	slideContent(10000);
 	resizeWindow();
 	setTimeout(function(){
 		$('.wrapper').addClass('fade-in-slow');
