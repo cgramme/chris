@@ -1,7 +1,8 @@
 var intertV;
 
 $(window).load(function(){
-	slideContent(100000);
+	slideContent(500000);
+	resizeWindow();
 	setTimeout(function(){
 		$('.wrapper').addClass('fade-in-slow');
 	},100);
@@ -122,6 +123,7 @@ function slideContent(time){
 		}else{
 			$('.slides:first').css({'opacity':'1'}).removeClass('translate-y-out, fade-in-slow');
 			$('.slides:nth('+(i+1)+')').show();
+			resizeWindow();
 			setTimeout(function(){
 				$('.slides:nth('+(i-1)+')').hide();
 				$('.slides:nth('+i+')').removeClass('translate-y-in').addClass('translate-y-out');
@@ -155,6 +157,7 @@ function resizeWindow() {
 	}
 
 	if(width<800) {
+		$('.box .pic').height($('.box .pic').width());
 		$('.footer h2').hide();
 	}else{
 		$('.footer h2').show();
