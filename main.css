@@ -317,7 +317,7 @@ ul.list-options {
           font-size: 1.5em;
           line-height: 20px; } }
     .main-content .current-content .wrap .profile-img {
-      background: url(images/beach_pic2.jpg) no-repeat;
+      background: url(images/profile2n.jpg) no-repeat;
       background-size: 100% 100%;
       box-shadow: 1px 1px 3px 0 #000;
       margin: 25px 30px 0 25px;
@@ -326,7 +326,7 @@ ul.list-options {
       width: 200px;
       height: 200px;
       border-radius: 125px;
-      box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #aaa; }
+      box-shadow: inset 2px 2px 3px 1px #000, 1px 1px 2px 0 #fff; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .profile-img {
           display: none; } }
