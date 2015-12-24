@@ -208,7 +208,7 @@ ul.list-options {
       display: block;
       margin: auto;
       text-align: center; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     ul.list-options {
       width: 100%; } }
   ul.list-options li.parent-3d {
@@ -319,14 +319,13 @@ ul.list-options {
     .main-content .current-content .wrap .profile-img {
       background: url(images/profile2n.jpg) no-repeat;
       background-size: 100% 100%;
-      box-shadow: 1px 1px 3px 0 #000;
       margin: 25px 30px 0 25px;
       float: left;
       display: inline-block;
       width: 200px;
       height: 200px;
-      border-radius: 125px;
-      box-shadow: inset 2px 2px 3px 1px #000, 1px 1px 2px 0 #fff; }
+      border-radius: 100px;
+      box-shadow: inset 2px 2px 3px 1px #333, 1px 1px 2px 0 #fff; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .profile-img {
           display: none; } }
@@ -409,7 +408,7 @@ ul.list-options {
           float: left;
           height: 240px;
           width: 240px;
-          background: url(images/beach_pic2.jpg);
+          background: url(images/profile2n.jpg);
           background-size: 100% 100%;
           margin: 0 10px 5px 0; } }
       @media screen and (max-width: 550px) {
@@ -458,7 +457,7 @@ ul.list-options {
         position: relative;
         z-index: -10; }
       .main-content .current-content .wrap ul.slide-content .profile-slide {
-        background: url(images/atlanta2.jpg);
+        background: url(images/mountain2s.jpg);
         background-size: 100% 100%;
         border-radius: 3px;
         box-shadow: 2px 2px 10px 0 #000, inset 0 0 3px 0 #000;
@@ -466,7 +465,7 @@ ul.list-options {
         text-align: left; }
         @media screen and (max-width: 1100px) {
           .main-content .current-content .wrap ul.slide-content .profile-slide {
-            background: url(images/atlanta2.jpg);
+            background: url(images/mountain2s.jpg);
             background-size: 100% 100%;
             box-shadow: 1px 1px 2px 0 #000, inset 0 0 3px 0 #000;
             text-align: center; } }
@@ -491,7 +490,8 @@ ul.list-options {
           .main-content .current-content .wrap ul.slide-content .app .box p {
             font-size: 20px;
             padding: 10px 0 10px 0;
-            font-family: "Open Sans"; }
+            font-family: "Open Sans";
+            text-shadow: 1px 1px 1px #999; }
             @media screen and (max-width: 1100px) {
               .main-content .current-content .wrap ul.slide-content .app .box p {
                 font-size: 16px; } }
@@ -514,7 +514,8 @@ ul.list-options {
         .main-content .current-content .wrap ul.slide-content .app .title {
           font-size: 35px;
           font-family: "Roboto";
-          text-align: center; }
+          text-align: center;
+          text-shadow: 1px 1px 1px #999; }
           @media screen and (max-width: 1100px) {
             .main-content .current-content .wrap ul.slide-content .app .title {
               font-size: 30px; } }
