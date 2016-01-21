@@ -3,15 +3,19 @@ var intertV;
 $(window).load(function(){
 	slideContent(10000);
 	resizeWindow();
+	setTimeout(function(){$('.wrapper').addClass('fade-in-slow');},100);
+
 	setTimeout(function(){
-		$('.wrapper').addClass('fade-in-slow');
-	},100);
+		$('.shade-wrap').addClass('translate-shade');
+	},0);
+	setTimeout(function(){$('.skills').addClass('transform-scale');},1500);
+	setTimeout(function () {listIn($('li .child-3d'), 0, 300);}, 500);
+	setTimeout(function(){$('.skills').css({'display':'inline-block'});},100);
 
-	setTimeout(function () {
 
-            listIn($('li .child-3d'), 0, 300);
+	wavePicAnima();
 
-        }, 1000);
+
 });
 $(document).ready(function(){
 	resizeWindow();
@@ -176,4 +180,19 @@ function resizeWindow() {
 $(window).resize(function() {
 	resizeWindow();
 });
+
+function wavePicAnima (){
+	var i = 0;
+	setInterval(function(){
+		i=(i<5)?i:0;
+		$('.text-pic div').css({'background':'url(images/wavea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
+		i=(i<5)?i:0;
+		$('.text-pic div').removeClass('fade-out-slow').addClass('fade-in-vslow').delay(5000).queue(function(next){
+			$('.text-pic').css({'background':'url(images/wavea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
+			i=(i<5)?i:0;
+                $('.text-pic div').removeClass('fade-in-slow').addClass('fade-out-slow');
+                next();
+        });
+	},10000);
+}
 

@@ -1,0 +1,38 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, iframe, select, div, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+html {
+  font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 62.5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; }
+
+h3 {
+  font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
+
+body {
+  background: url(images/texture_7.jpg); }
+
+.page-wrap {
+  padding: 0px 20px 20px 20px; }
+
+.profile-pic {
+  height: 400px;
+  width: 280px;
+  background: url(images/profile_sketch.jpg);
+  box-shadow: 1px 1px 5px 1px #000;
+  background-size: 100% 100%;
+  border-radius: 2px;
+  margin-right: 20px; }
+
+.name-logo {
+  display: inline-block;
+  vertical-align: top; }
+
+/*# sourceMappingURL=main_new.css.map */
