@@ -670,7 +670,7 @@ ul.list-options {
             font-size: 18px;
             color: #222;
             font-weight: 100; }
-    .main-content .current-content .wrap div.projects-label {
+    .main-content .current-content .wrap .projects-label {
       font-size: 3em;
       border-radius: 50px;
       font-weight: normal;
@@ -690,25 +690,25 @@ ul.list-options {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(#0399fb, #0070b9); }
       @media screen and (max-width: 900px) {
-        .main-content .current-content .wrap div.projects-label {
+        .main-content .current-content .wrap .projects-label {
           width: 100px;
           font-size: 2em; } }
       @media screen and (max-width: 600px) {
-        .main-content .current-content .wrap div.projects-label {
+        .main-content .current-content .wrap .projects-label {
           width: 80px;
           margin-top: 5px;
           margin-bottom: 20px;
           padding: 10px; } }
-      .main-content .current-content .wrap div.projects-label .wrapper {
+    .main-content .current-content .wrap .projects-wrap {
+      list-style-type: none;
+      display: table; }
+      .main-content .current-content .wrap .projects-wrap .wrapper {
         display: inline-block;
         width: 470px; }
         @media screen and (max-width: 700px) {
-          .main-content .current-content .wrap div.projects-label .wrapper {
+          .main-content .current-content .wrap .projects-wrap .wrapper {
             margin: 20px 0; } }
-        .main-content .current-content .wrap div.projects-label .wrapper iframe {
-          width: 300px;
-          height: 450px; }
-        .main-content .current-content .wrap div.projects-label .wrapper h2 {
+        .main-content .current-content .wrap .projects-wrap .wrapper h2 {
           font-size: 5em;
           color: #000;
           line-height: 1.1em;
@@ -716,20 +716,20 @@ ul.list-options {
           margin-bottom: 20px;
           font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif; }
           @media screen and (max-width: 500px) {
-            .main-content .current-content .wrap div.projects-label .wrapper h2 {
+            .main-content .current-content .wrap .projects-wrap .wrapper h2 {
               font-size: 2.5em; } }
           @media screen and (max-width: 420px) {
-            .main-content .current-content .wrap div.projects-label .wrapper h2 {
+            .main-content .current-content .wrap .projects-wrap .wrapper h2 {
               font-size: 2em; } }
-        .main-content .current-content .wrap div.projects-label .wrapper p {
+        .main-content .current-content .wrap .projects-wrap .wrapper p {
           color: #333;
           font-size: 2.2em;
           font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
           text-align: justify; }
           @media screen and (max-width: 450px) {
-            .main-content .current-content .wrap div.projects-label .wrapper p {
+            .main-content .current-content .wrap .projects-wrap .wrapper p {
               font-size: 1.4em; } }
-        .main-content .current-content .wrap div.projects-label .wrapper img {
+        .main-content .current-content .wrap .projects-wrap .wrapper img {
           display: inline-block;
           float: left;
           margin-top: 0px;
@@ -739,14 +739,14 @@ ul.list-options {
           width: 110px;
           height: 110px; }
           @media screen and (max-width: 800px) {
-            .main-content .current-content .wrap div.projects-label .wrapper img {
+            .main-content .current-content .wrap .projects-wrap .wrapper img {
               width: 70px;
               height: 70px; } }
-        .main-content .current-content .wrap div.projects-label .wrapper .round {
+        .main-content .current-content .wrap .projects-wrap .wrapper .round {
           border-radius: 50%; }
-        .main-content .current-content .wrap div.projects-label .wrapper .no-shadow {
+        .main-content .current-content .wrap .projects-wrap .wrapper .no-shadow {
           box-shadow: none; }
-        .main-content .current-content .wrap div.projects-label .wrapper .technologies {
+        .main-content .current-content .wrap .projects-wrap .wrapper .technologies {
           border: 1px solid #aaa;
           padding: 10px 10px;
           display: inline-block;
@@ -754,16 +754,16 @@ ul.list-options {
           margin-top: 10px;
           background-color: rgba(0, 0, 0, 0.95);
           box-shadow: 1px 1px 5px 0px #000; }
-          .main-content .current-content .wrap div.projects-label .wrapper .technologies h3 {
+          .main-content .current-content .wrap .projects-wrap .wrapper .technologies h3 {
             padding: 0 5px;
             font-size: 2.5em;
             color: #fff;
             text-shadow: 1px 1px 5px #000;
             font-family: "Open Sans Condensed"; }
             @media screen and (max-width: 450px) {
-              .main-content .current-content .wrap div.projects-label .wrapper .technologies h3 {
+              .main-content .current-content .wrap .projects-wrap .wrapper .technologies h3 {
                 font-size: 1.5em; } }
-        .main-content .current-content .wrap div.projects-label .wrapper button {
+        .main-content .current-content .wrap .projects-wrap .wrapper button {
           padding: 5px 10px;
           font-size: 2.5em;
           color: #fff;
@@ -774,71 +774,68 @@ ul.list-options {
           cursor: pointer;
           text-shadow: 1px 1px 5px #000;
           font-family: "Open Sans Condensed"; }
-          .main-content .current-content .wrap div.projects-label .wrapper button:hover {
+          .main-content .current-content .wrap .projects-wrap .wrapper button:hover {
             box-shadow: 2px 2px 6px 3px #000; }
-        .main-content .current-content .wrap div.projects-label .wrapper .view-site {
+        .main-content .current-content .wrap .projects-wrap .wrapper .view-site {
           background-color: #387a43; }
-        .main-content .current-content .wrap div.projects-label .wrapper .view-code {
+        .main-content .current-content .wrap .projects-wrap .wrapper .view-code {
           background-color: #384d7a; }
-      .main-content .current-content .wrap div.projects-label ul {
-        list-style-type: none;
-        display: table; }
-        .main-content .current-content .wrap div.projects-label ul li {
-          display: inline-table;
-          width: 1000px;
-          overflow: hidden;
-          padding: 20px;
-          margin-top: 20px;
-          border-bottom: 1px solid #ddd; }
-      .main-content .current-content .wrap div.projects-label .left-side {
+      .main-content .current-content .wrap .projects-wrap li {
+        display: inline-table;
+        width: 1000px;
+        overflow: hidden;
+        padding: 20px;
+        margin-top: 20px;
+        border-bottom: 1px solid #ddd; }
+      .main-content .current-content .wrap .projects-wrap .left-side {
         margin-right: 50px; }
-      .main-content .current-content .wrap div.projects-label .one {
+      .main-content .current-content .wrap .projects-wrap .one {
         background: url(images/screen_shot1.png); }
-      .main-content .current-content .wrap div.projects-label .two {
+      .main-content .current-content .wrap .projects-wrap .two {
         background: url(images/screen_shot2.png); }
-      .main-content .current-content .wrap div.projects-label .three {
+      .main-content .current-content .wrap .projects-wrap .three {
         background: url(images/screen_shot3.jpg); }
-      .main-content .current-content .wrap div.projects-label .four {
+      .main-content .current-content .wrap .projects-wrap .four {
         background: url(images/screen_shot4.jpg); }
-      .main-content .current-content .wrap div.projects-label .five {
+      .main-content .current-content .wrap .projects-wrap .five {
         background: url(images/screen_shot5.png); }
-      .main-content .current-content .wrap div.projects-label .six {
+      .main-content .current-content .wrap .projects-wrap .six {
         background: url(images/screen_shot6.png); }
-      .main-content .current-content .wrap div.projects-label .seven {
+      .main-content .current-content .wrap .projects-wrap .seven {
         background: url(images/screen_shot7.png); }
-      .main-content .current-content .wrap div.projects-label .eight {
+      .main-content .current-content .wrap .projects-wrap .eight {
         background: url(images/screen_shot8.png); }
-      .main-content .current-content .wrap div.projects-label .cell-wrapper {
+      .main-content .current-content .wrap .projects-wrap .cell-wrapper {
         text-align: center;
         width: 470px;
         height: 500px;
         display: inline-block;
         margin-bottom: -70px; }
-        .main-content .current-content .wrap div.projects-label .cell-wrapper .screen-shot {
+        .main-content .current-content .wrap .projects-wrap .cell-wrapper .screen-shot {
           background-size: 100% 100%;
           height: 382px;
           border: 1px solid transparent;
           width: 280px;
           margin: auto; }
-          .main-content .current-content .wrap div.projects-label .cell-wrapper .screen-shot .cell-phone {
+          .main-content .current-content .wrap .projects-wrap .cell-wrapper .screen-shot .cell-phone {
             margin-top: -25px;
             margin-left: -10px;
             width: 300px;
             height: 470px;
             background: url(images/cell_phone2.png);
             background-size: 100% 100%; }
-      .main-content .current-content .wrap div.projects-label .pic-wrapper {
+      .main-content .current-content .wrap .projects-wrap .pic-wrapper {
         margin-bottom: -50px;
         width: 470px;
         height: 500px;
         display: inline-block; }
-        .main-content .current-content .wrap div.projects-label .pic-wrapper .screen-shot {
+        .main-content .current-content .wrap .projects-wrap .pic-wrapper .screen-shot {
           background-size: 100% 100%;
           height: 310px;
           border: 1px solid transparent;
           width: 440px;
           margin: auto; }
-          .main-content .current-content .wrap div.projects-label .pic-wrapper .screen-shot .computer {
+          .main-content .current-content .wrap .projects-wrap .pic-wrapper .screen-shot .computer {
             margin-top: -16px;
             margin-left: -15px;
             width: 470px;

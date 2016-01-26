@@ -824,9 +824,13 @@ ul.list-options {
 					}
 				//this scss/css is for the "PROJECTS" content
 
-				div.projects-label {
+				.projects-label {
 					@include sectionLabel();
 					@include gradientHue($color2-1-l, $color2-1-lm);
+				}
+				.projects-wrap {
+					list-style-type: none;
+					display: table;
 					.wrapper {
 					display: inline-block;
 					width: 470px;
@@ -841,10 +845,6 @@ ul.list-options {
   					img {
   						//opacity: 0;
   					}
-					iframe {
-						width: 300px;
-						height: 450px;
-					}
 					h2 {
 						font-size: 5em;
 						//text-shadow: 1px 1px 1px #000;
@@ -933,10 +933,6 @@ ul.list-options {
 						background-color: #384d7a;
 					}
 				}
-
-				ul {
-					list-style-type: none;
-					display: table;
 					li {
 						display: inline-table;
 						//float: left;
@@ -950,7 +946,7 @@ ul.list-options {
 						//border: 1px solid red;
 
 					}
-				}
+				
 				.left-side {
 					margin-right: 50px;
 				}

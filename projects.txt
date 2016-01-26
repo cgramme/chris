@@ -1,6 +1,6 @@
 <div class="wrap">
 					<div class="projects-label">Projects</div>
-					<ul class="projects">
+					<ul class="projects-wrap">
 						<li>
 							<div class="left-side wrapper">
 								<img class="zoom-scroll1 round" src="images/compass.png" alt="compass" />
