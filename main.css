@@ -126,6 +126,24 @@ keyframes buttonHover to {
   -webkit-animation: backgroundFade 5s forwards;
   animation: backgroundFade 5s forwards; }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1); } }
+.bounce {
+  -webkit-animation: bounce 0.5s forwards;
+  animation: bounce 0.5s forwards; }
+
 @keyframes fadeIn {
   to {
     opacity: 1; } }
@@ -402,7 +420,7 @@ ul.list-options {
       font-size: 2.2em;
       text-shadow: 1px 1px 1px #000;
       background: rgba(0, 0, 0, 0.96);
-      display: inline-block;
+      display: none;
       width: 700px;
       border-radius: 5px;
       box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #777;
@@ -681,79 +699,152 @@ ul.list-options {
           margin-top: 5px;
           margin-bottom: 20px;
           padding: 10px; } }
-    .main-content .current-content .wrap ul {
-      list-style-type: none; }
-    .main-content .current-content .wrap .wrapper {
-      background: url(images/repeat2.jpg);
-      border-radius: 5px 5px 5px 5px;
-      padding: 20px;
-      margin: 20px;
-      box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000; }
-      @media screen and (max-width: 700px) {
-        .main-content .current-content .wrap .wrapper {
-          margin: 20px 0; } }
-      .main-content .current-content .wrap .wrapper h2 {
-        font-size: 2.5em;
-        text-shadow: 1px 1px 5px #000;
-        font-weight: bold;
-        color: #fff;
-        line-height: 1.1em;
-        font-family: "Roboto","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
-        @media screen and (max-width: 500px) {
-          .main-content .current-content .wrap .wrapper h2 {
-            font-size: 2.5em; } }
-        @media screen and (max-width: 420px) {
-          .main-content .current-content .wrap .wrapper h2 {
-            font-size: 2em; } }
-      .main-content .current-content .wrap .wrapper p {
-        color: #ccc;
-        font-weight: bold;
-        font-size: 1.5em;
-        font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-        text-shadow: 1px 1px 3px #000; }
-        @media screen and (max-width: 450px) {
-          .main-content .current-content .wrap .wrapper p {
-            font-size: 1.4em; } }
-      .main-content .current-content .wrap .wrapper img {
-        margin-top: 5px;
-        border-radius: 5px;
-        width: 110px;
-        height: 110px; }
-        @media screen and (max-width: 800px) {
-          .main-content .current-content .wrap .wrapper img {
-            width: 70px;
-            height: 70px; } }
-      .main-content .current-content .wrap .wrapper .technologies {
-        border: 1px solid #aaa;
-        padding: 7px;
+      .main-content .current-content .wrap div.projects-label .wrapper {
         display: inline-block;
-        border-radius: 10px;
-        margin-top: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 5px 2px #000; }
-        .main-content .current-content .wrap .wrapper .technologies h3 {
-          font-size: 1.8em;
-          color: #fff;
-          text-shadow: 1px 1px 5px #000; }
+        width: 470px; }
+        @media screen and (max-width: 700px) {
+          .main-content .current-content .wrap div.projects-label .wrapper {
+            margin: 20px 0; } }
+        .main-content .current-content .wrap div.projects-label .wrapper iframe {
+          width: 300px;
+          height: 450px; }
+        .main-content .current-content .wrap div.projects-label .wrapper h2 {
+          font-size: 5em;
+          color: #000;
+          line-height: 1.1em;
+          vertical-align: top;
+          margin-bottom: 20px;
+          font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif; }
+          @media screen and (max-width: 500px) {
+            .main-content .current-content .wrap div.projects-label .wrapper h2 {
+              font-size: 2.5em; } }
+          @media screen and (max-width: 420px) {
+            .main-content .current-content .wrap div.projects-label .wrapper h2 {
+              font-size: 2em; } }
+        .main-content .current-content .wrap div.projects-label .wrapper p {
+          color: #333;
+          font-size: 2.2em;
+          font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+          text-align: justify; }
           @media screen and (max-width: 450px) {
-            .main-content .current-content .wrap .wrapper .technologies h3 {
-              font-size: 1.5em; } }
-      .main-content .current-content .wrap .wrapper button {
-        padding: 10px;
-        font-size: 1.8em;
-        color: #fff;
-        text-shadow: 1px 1px 5px #000;
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px 2px #000;
-        margin-right: 10px;
-        margin-top: 10px;
-        cursor: pointer; }
-        .main-content .current-content .wrap .wrapper button:hover {
-          box-shadow: 2px 2px 6px 3px #000; }
-      .main-content .current-content .wrap .wrapper .view-site {
-        background-color: #387a43; }
-      .main-content .current-content .wrap .wrapper .view-code {
-        background-color: #384d7a; }
+            .main-content .current-content .wrap div.projects-label .wrapper p {
+              font-size: 1.4em; } }
+        .main-content .current-content .wrap div.projects-label .wrapper img {
+          display: inline-block;
+          float: left;
+          margin-top: 0px;
+          margin-right: 10px;
+          border-radius: 5px;
+          box-shadow: 1px 1px 5px 0 #000;
+          width: 110px;
+          height: 110px; }
+          @media screen and (max-width: 800px) {
+            .main-content .current-content .wrap div.projects-label .wrapper img {
+              width: 70px;
+              height: 70px; } }
+        .main-content .current-content .wrap div.projects-label .wrapper .round {
+          border-radius: 50%; }
+        .main-content .current-content .wrap div.projects-label .wrapper .no-shadow {
+          box-shadow: none; }
+        .main-content .current-content .wrap div.projects-label .wrapper .technologies {
+          border: 1px solid #aaa;
+          padding: 10px 10px;
+          display: inline-block;
+          border-radius: 10px;
+          margin-top: 10px;
+          background-color: rgba(0, 0, 0, 0.95);
+          box-shadow: 1px 1px 5px 0px #000; }
+          .main-content .current-content .wrap div.projects-label .wrapper .technologies h3 {
+            padding: 0 5px;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 1px 1px 5px #000;
+            font-family: "Open Sans Condensed"; }
+            @media screen and (max-width: 450px) {
+              .main-content .current-content .wrap div.projects-label .wrapper .technologies h3 {
+                font-size: 1.5em; } }
+        .main-content .current-content .wrap div.projects-label .wrapper button {
+          padding: 5px 10px;
+          font-size: 2.5em;
+          color: #fff;
+          border-radius: 10px;
+          box-shadow: 2px 2px 5px 2px #000;
+          margin-right: 10px;
+          margin-top: 10px;
+          cursor: pointer;
+          text-shadow: 1px 1px 5px #000;
+          font-family: "Open Sans Condensed"; }
+          .main-content .current-content .wrap div.projects-label .wrapper button:hover {
+            box-shadow: 2px 2px 6px 3px #000; }
+        .main-content .current-content .wrap div.projects-label .wrapper .view-site {
+          background-color: #387a43; }
+        .main-content .current-content .wrap div.projects-label .wrapper .view-code {
+          background-color: #384d7a; }
+      .main-content .current-content .wrap div.projects-label ul {
+        list-style-type: none;
+        display: table; }
+        .main-content .current-content .wrap div.projects-label ul li {
+          display: inline-table;
+          width: 1000px;
+          overflow: hidden;
+          padding: 20px;
+          margin-top: 20px;
+          border-bottom: 1px solid #ddd; }
+      .main-content .current-content .wrap div.projects-label .left-side {
+        margin-right: 50px; }
+      .main-content .current-content .wrap div.projects-label .one {
+        background: url(images/screen_shot1.png); }
+      .main-content .current-content .wrap div.projects-label .two {
+        background: url(images/screen_shot2.png); }
+      .main-content .current-content .wrap div.projects-label .three {
+        background: url(images/screen_shot3.jpg); }
+      .main-content .current-content .wrap div.projects-label .four {
+        background: url(images/screen_shot4.jpg); }
+      .main-content .current-content .wrap div.projects-label .five {
+        background: url(images/screen_shot5.png); }
+      .main-content .current-content .wrap div.projects-label .six {
+        background: url(images/screen_shot6.png); }
+      .main-content .current-content .wrap div.projects-label .seven {
+        background: url(images/screen_shot7.png); }
+      .main-content .current-content .wrap div.projects-label .eight {
+        background: url(images/screen_shot8.png); }
+      .main-content .current-content .wrap div.projects-label .cell-wrapper {
+        text-align: center;
+        width: 470px;
+        height: 500px;
+        display: inline-block;
+        margin-bottom: -70px; }
+        .main-content .current-content .wrap div.projects-label .cell-wrapper .screen-shot {
+          background-size: 100% 100%;
+          height: 382px;
+          border: 1px solid transparent;
+          width: 280px;
+          margin: auto; }
+          .main-content .current-content .wrap div.projects-label .cell-wrapper .screen-shot .cell-phone {
+            margin-top: -25px;
+            margin-left: -10px;
+            width: 300px;
+            height: 470px;
+            background: url(images/cell_phone2.png);
+            background-size: 100% 100%; }
+      .main-content .current-content .wrap div.projects-label .pic-wrapper {
+        margin-bottom: -50px;
+        width: 470px;
+        height: 500px;
+        display: inline-block; }
+        .main-content .current-content .wrap div.projects-label .pic-wrapper .screen-shot {
+          background-size: 100% 100%;
+          height: 310px;
+          border: 1px solid transparent;
+          width: 440px;
+          margin: auto; }
+          .main-content .current-content .wrap div.projects-label .pic-wrapper .screen-shot .computer {
+            margin-top: -16px;
+            margin-left: -15px;
+            width: 470px;
+            height: 450px;
+            background: url(images/computer_screen.png);
+            background-size: 100% 100%; }
     .main-content .current-content .wrap .interests-content {
       padding-bottom: 10px; }
       .main-content .current-content .wrap .interests-content div.interests-label {

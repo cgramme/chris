@@ -192,6 +192,21 @@ keyframes buttonHover {
     -webkit-animation: backgroundFade 5s forwards;
     animation: backgroundFade 5s forwards;
 }
+@keyframes bounce {
+    0%{transform: scale(1);}
+
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+@-webkit-keyframes bounce {
+    0%{-webkit-transform: scale(1);}
+    50%{-webkit-transform: scale(1.2);}
+    100%{-webkit-transform: scale(1);}
+}
+.bounce {
+    -webkit-animation: bounce 0.5s forwards;
+    animation: bounce 0.5s forwards;
+}
 
 
 
@@ -523,7 +538,7 @@ ul.list-options {
 						font-size: 2.2em;
 						text-shadow: 1px 1px 1px #000;
 						background: hsla(120, 60%, 0%, 0.96);
-						display: inline-block;
+						display: none;
 						width:700px;
 						border-radius: 5px;
 						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #777;
@@ -812,27 +827,32 @@ ul.list-options {
 				div.projects-label {
 					@include sectionLabel();
 					@include gradientHue($color2-1-l, $color2-1-lm);
-				}
-				ul {
-					list-style-type: none;
-				}
-				.wrapper {
-					background: url(images/repeat2.jpg);
-					border-radius: 5px 5px 5px 5px;
-					padding: 20px;
-					margin: 20px;
-					box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000;
+					.wrapper {
+					display: inline-block;
+					width: 470px;
+					//border: 1px solid red;
+					//background: url(images/repeat2.jpg);
+					//border-radius: 5px 5px 5px 5px;
+					//padding: 20px;
+					//box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000;
 					@media screen and (max-width: 700px) {
 						margin: 20px 0;
-  						}
-					
+  					}
+  					img {
+  						//opacity: 0;
+  					}
+					iframe {
+						width: 300px;
+						height: 450px;
+					}
 					h2 {
-						font-size: 2.5em;
-						text-shadow: 1px 1px 5px #000;
-						font-weight: bold;
-						color: #fff;
+						font-size: 5em;
+						//text-shadow: 1px 1px 1px #000;
+						color: #000;
 						line-height: 1.1em;
-						font-family: "Roboto","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+						vertical-align: top;
+						margin-bottom: 20px;
+						font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
 						@media screen and (max-width: 500px) {
 							font-size: 2.5em;
   						}
@@ -841,18 +861,22 @@ ul.list-options {
   						}
 					}
 					p {
-						color: #ccc;
-						font-weight: bold;
-						font-size: 1.5em;
-						font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-						text-shadow: 1px 1px 3px #000;
+						color: #333;
+						font-size: 2.2em;
+						font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+						text-align: justify;
+						//text-shadow: 1px 1px 3px #000;
 						@media screen and (max-width: 450px) {
 							font-size: 1.4em;
   						}
 					}
 					img {
-						margin-top: 5px;
+						display: inline-block;
+						float: left;
+						margin-top: 0px;
+						margin-right: 10px;
 						border-radius: 5px;
+						box-shadow: 1px 1px 5px 0 #000;
 						width: 110px;
 						height: 110px;
 						@media screen and (max-width: 800px) {
@@ -860,20 +884,27 @@ ul.list-options {
 							height: 70px;
 						}
 					}
+					.round {
+						border-radius: 50%;
+					}
+					.no-shadow {
+						box-shadow: none;
+					}
 					.technologies {
 						border: 1px solid #aaa;
-						padding: 7px;
+						padding: 10px 10px;
 						display: inline-block;
 						border-radius: 10px;
 						margin-top: 10px;
-						background-color: hsla(120, 60%, 0%, 0.5);
-						box-shadow: 2px 2px 5px 2px #000;
-
+						background-color: hsla(120, 60%, 0%, 0.95);
+						box-shadow: 1px 1px 5px 0px #000;
 
 						h3 {
-							font-size: 1.8em;
+							padding: 0 5px;
+							font-size: 2.5em;
 							color: #fff;
 							text-shadow: 1px 1px 5px #000;
+							font-family: "Open Sans Condensed";
 							@media screen and (max-width: 450px) {
 							font-size: 1.5em;
   						}
@@ -881,15 +912,16 @@ ul.list-options {
 					}
 
 					button {
-						padding: 10px;
-						font-size: 1.8em;
+						padding: 5px 10px;
+						font-size: 2.5em;
 						color: #fff;
-						text-shadow: 1px 1px 5px #000;
 						border-radius: 10px;
 						box-shadow: 2px 2px 5px 2px #000;
 						margin-right: 10px;
 						margin-top: 10px;
 						cursor: pointer;
+						text-shadow: 1px 1px 5px #000;
+						font-family: "Open Sans Condensed";
 						&:hover {
 							box-shadow: 2px 2px 6px 3px #000;
 						}
@@ -901,6 +933,102 @@ ul.list-options {
 						background-color: #384d7a;
 					}
 				}
+
+				ul {
+					list-style-type: none;
+					display: table;
+					li {
+						display: inline-table;
+						//float: left;
+						//vertical-align: top;
+						width: 1000px;
+						//height: 500px;
+						overflow: hidden;
+						padding: 20px;
+						margin-top: 20px;
+						border-bottom: 1px solid #ddd;
+						//border: 1px solid red;
+
+					}
+				}
+				.left-side {
+					margin-right: 50px;
+				}
+				.one {
+					background: url(images/screen_shot1.png);
+				}
+				.two {
+					background: url(images/screen_shot2.png);
+				}
+				.three {
+					background: url(images/screen_shot3.jpg);
+				}
+				.four {
+					background: url(images/screen_shot4.jpg);
+				}
+				.five {
+					background: url(images/screen_shot5.png);
+				}
+				.six {
+					background: url(images/screen_shot6.png);
+				}
+				.seven {
+					background: url(images/screen_shot7.png);
+				}
+				.eight {
+					background: url(images/screen_shot8.png);
+				}
+				.cell-wrapper {
+					text-align: center;
+					width:470px;
+					height: 500px;
+					display: inline-block;
+					margin-bottom: -70px;
+					.screen-shot {
+						background-size: 100% 100%;
+						height: 382px;
+						border: 1px solid transparent;
+						width: 280px;
+						margin: auto;
+						.cell-phone {
+							margin-top: -25px;
+							margin-left: -10px;
+							width:300px;
+							height: 470px;
+							background: url(images/cell_phone2.png);
+							background-size: 100% 100%;
+						}
+					}
+				}
+				.pic-wrapper {
+					margin-bottom: -50px;
+					width:470px;
+					height: 500px;
+					display: inline-block;
+					.screen-shot {
+						background-size: 100% 100%;
+						height: 310px;
+						border: 1px solid transparent;
+						width: 440px;
+						margin: auto;
+						.computer {
+							margin-top: -16px;
+							margin-left: -15px;
+							width:470px;
+							height: 450px;
+							background: url(images/computer_screen.png);
+							background-size: 100% 100%;
+						}
+					}
+				}
+
+
+
+
+
+				}
+				
+				
 
 
 				//"INTERESTS" content below

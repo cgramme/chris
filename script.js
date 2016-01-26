@@ -12,11 +12,38 @@ $(window).load(function(){
 	setTimeout(function () {listIn($('li .child-3d'), 0, 300);}, 500);
 	setTimeout(function(){$('.skills').css({'display':'inline-block'});},100);
 
-
 	wavePicAnima();
 
-
 });
+
+$(window).scroll(function(){
+	isScrolledIntoView('.zoom-scroll1');
+	isScrolledIntoView('.zoom-scroll2');
+	isScrolledIntoView('.zoom-scroll3');
+	isScrolledIntoView('.zoom-scroll4');
+	isScrolledIntoView('.zoom-scroll5');
+	isScrolledIntoView('.zoom-scroll6');
+	isScrolledIntoView('.zoom-scroll7');
+	isScrolledIntoView('.zoom-scroll8');
+});
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+    	$($elem).addClass('bounce');
+    }else{
+    	$($elem).removeClass('bounce');
+    }
+}
+
 $(document).ready(function(){
 	resizeWindow();
 	$('.projects').click(function() {
@@ -50,16 +77,10 @@ $(document).on('click', '.contact', function() {
 $(document).on('mouseenter', '.large-icon.email', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'40px'}).html("cgramme36@gmail.com").fadeIn(200);},200);
-	}).on('mouseleave', '.large-icon.email', function(){
-		$('.footer h2').fadeOut(200);
-		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
 $(document).on('mouseenter', '.large-icon.phone', function(){
 		$('.footer h2').fadeOut(200);
 		setTimeout(function(){$('.footer h2').css({'font-size':'50px'}).html("# (770) 549-5787").fadeIn(200);},200);
-	}).on('mouseleave', '.large-icon.phone', function(){
-		$('.footer h2').fadeOut(200);
-		setTimeout(function(){$('.footer h2').css({'font-size':'70px'}).html("Contact").fadeIn(200);},200);
 	});
 
 $(document).on('click', '.android', function () {
@@ -78,6 +99,7 @@ function loadXMLDoc(url, elementId){
 		xmlhttp.onreadystatechange=function(){
   			if (xmlhttp.readyState==4 && xmlhttp.status==200){
     				document.getElementById(elementId).innerHTML=xmlhttp.responseText;
+    				setTimeout(function(){$(window).scroll();},2000);
    			 }
   		}
 		xmlhttp.open("GET",url,true);

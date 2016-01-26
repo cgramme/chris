@@ -1,22 +1,32 @@
 <div class="wrap">
 					<div class="projects-label">Projects</div>
-					<ul>
+					<ul class="projects">
 						<li>
-							<div class="wrapper">
+							<div class="left-side wrapper">
+								<img class="zoom-scroll1 round" src="images/compass.png" alt="compass" />
 								<h2>Code Odyssey</h2>
 								<p class="indent">Code Odyssey is a website I created to teach aspiring web-developers basic web technologies, tips, tricks, and some intermediate to advanced coding practices. My inspiration for creating the site was to give young and intermediate developers a free place to either learn on a step by step system, or simply to use it as a handy reference. Code Odyssey is a work in progress with much room to grow into the full potential I have planned for its future updates.</p>
-								<img src="images/compass.png" alt="compass" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Sass, Javascript, JQuery, AJAX</h3></div>
 								</div>
 								<button class="view-site" onclick="window.open('http://cgramme.github.io/codeodyssey')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/codeodyssey')">View code @ Github</button>
 							</div>
+							<div class="pic-wrapper">
+								<div class="screen-shot one">
+									<div class="computer"></div>
+								</div>
+							</div>
 						</li>
 						<li>
+							<div class="left-side pic-wrapper">
+								<div class="screen-shot two">
+									<div class="computer"></div>
+								</div>
+							</div>
 							<div class="wrapper">
+								<img class="zoom-scroll2" src="images/space.jpg" alt="space" />
 								<h2>Intergalactic Adventures INC.</h2>
 								<p class="indent">Intergalactic Adventures INC. is a fictional business I created to be fun and comical. It makes light of businesses we may very well see in the distant future and lets you book a "faux" vacation to various intergalactic destinations. I have always been intrigued by the vastsness of space, thus creating this was one way of channeling my creativity and interest to a new level. This website is also responsive to all devices and screen sizes. Enjoy, and have a safe flight!</p>
-								<img src="images/space.jpg" alt="space" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Javascript, JQuery</h3></div>
 								</div>
@@ -24,33 +34,48 @@
 							</div>
 						</li>
 						<li>
-							<div class="wrapper">
+							<div class="left-side wrapper">
+								<img class="zoom-scroll3" src="images/ferrari458.jpg" alt="ferrari" />
 								<h2>Supercar Challenge</h2>
+								<!--<iframe class="right" src="http://cgramme.github.io/cubeanimation/"></iframe>-->
 								<p class="indent">Supercar Challenge is a game I created utilizing JQuery Mobile as a mobile friendly driving force. This source code was also created for easy duplication of similar type quiz games. Test your knowledge of some of the most recent and iconic supercars in existence in this classic quiz. Do you have what it takes? Find out now with this simple quiz, no matter what screen size or device you have!</p>
-								<img src="images/ferrari458.jpg" alt="ferrari" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Sass, Javascript, JQuery, JQuery Mobile</h3></div>
 								</div>
 								<button class="view-site" onclick="window.open('http://cgramme.github.io/supercarquiz/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/supercarquiz')">View code @ Github</button>
 							</div>
+							<div class="cell-wrapper">
+								<div class="screen-shot three">
+									<div class="cell-phone"></div>
+								</div>
+							</div>
 						</li>
 						<li>
-							<div class="wrapper">
+							<div class="left-side wrapper">
+								<img class="zoom-scroll4 no-shadow" src="images/carapp_logo.png" alt="car" />
 								<h2>Car Maintenance and Fuel</h2>
-								<p class="indent">This is an Android application I created years back as my first coding project and is the reason I fell in love with programming altogether. I simply had an idea which I thought would be successful and went through the procceses of learning how to code as I created it. This is one of the biggest challenges and accomplishments I have encountered on my coding journey so far. Going from knowing basic coding to producing a polished Android product, then creating a "Pro" version was a challenge I loved and never gave up on. The free version reached just under 50,000 downloads in the first two years while the pro version reached 1000 downloads in a year at $3.49. It may not have been a retirement project, but it was certainly an enjoyable and gratifying process.</p>
-								<p class="indent">I have improved my coding ability over the past few years quite a bit and have plans to recreate a similar, even more polished version of this app for both the Iphone and Android systems. Even though I consider 'Car Maintenance and Fuel' to be a success I see many ways to improve the code and functionality.</p>
-								<img src="images/carapp_logo.png" alt="car" />
+								<p class="indent">This is an Android application I created years back as my first coding project and is the reason I fell in love with programming altogether. I had an idea which I thought would be successful and went through the procceses of learning how to code as I created it. This is one of the biggest challenges and accomplishments I have encountered on my coding journey so far.
 								<div>
 									<div class="technologies"><h3>Technologies: Java, SQlite, XML</h3></div>
 								</div>
 								<button class="view-site" onclick="window.open('http://cgramme.github.io/androidsite/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/androidsite')">View code @ Github</button><button class="view-code android">Android experience</button>
 							</div>
+							<div class="cell-wrapper">
+								<div class="screen-shot four">
+									<div class="cell-phone"></div>
+								</div>
+							</div>
 						</li>
 						<li>
+							<div class="left-side pic-wrapper">
+								<div class="screen-shot five">
+									<div class="computer"></div>
+								</div>
+							</div>
 							<div class="wrapper">
+								<img class="zoom-scroll5 no-shadow" src="images/gem.png" alt="gem" />
 								<h2>Cool Cave Gems</h2>
 								<p class="indent">Cool Cave Gems is a memory game where the player selects a space and matches to a corresponding item. Collecting/matching all the gems results in passing the level while gaining points. Each level increases in difficulty by reducing the time you have to complete the challenge. This game was also made to be responsive to all deveices and screen sizes. Have fun, and see if you can get to level nine!</p>
-								<img src="images/gem.png" alt="gem" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Javascript, JQuery</h3></div>
 								</div>
@@ -58,32 +83,47 @@
 							</div>
 						</li>
 						<li>
-							<div class="wrapper">
+							<div class="left-side wrapper">
+								<img class="zoom-scroll6" src="images/enterprise.jpg" alt="spaceship" />
 								<h2>Our Home "The Solar System"</h2>
 								<p class="indent">I created this website to be interactive and provide informative facts regarding our home, the solar system. The key was to provide information about the sun and each planet in our solar system, while personally having fun with CSS techniques. As with almost all my websites I created this to be responsive to all devices and screen sizes.</p>
-								<img src="images/enterprise.jpg" alt="spaceship" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Sass, Javascript, JQuery</h3></div>
 								</div>
 								<button class="view-site" onclick="window.open('http://cgramme.github.io/animations')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/animations')">View code @ Github</button>
 							</div>
+							<div class="pic-wrapper">
+								<div class="screen-shot six">
+									<div class="computer"></div>
+								</div>
+							</div>
 						</li>
 						<li>
-							<div class="wrapper">
+							<div class="left-side wrapper">
+								<img class="zoom-scroll7 no-shadow" src="images/cloud_bulb.png" alt="clouds" />
 								<h2>Dreamsite Reality</h2>
 								<p class="indent">Dreamsite Reality is an example layout I created for practice working with Bootstrap technologies. The idea of Dreamsite Reality is a website developing business where customers can look at a few example layouts and get a feel for which styles I can deliver for their site. This is a business idea I will invest more time on in the future.</p>
-								<img src="images/cloud_bulb.png" alt="clouds" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Javascript, JQuery, Bootstrap</h3></div>
 								</div>
 								<button class="view-site" onclick="window.open('http://cgramme.github.io/dreamsitereality/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/dreamsitereality')">View code @ Github</button>
 							</div>
+							<div class="pic-wrapper">
+								<div class="screen-shot seven">
+									<div class="computer"></div>
+								</div>
+							</div>
 						</li>
 						<li>
+							<div class="left-side pic-wrapper">
+								<div class="screen-shot eight">
+									<div class="computer"></div>
+								</div>
+							</div>
 							<div class="wrapper">
+								<img class="zoom-scroll8" src="images/luke.jpg" alt="luke skywalker" />
 								<h2>Front End Jedi</h2>
 								<p class="indent">If you like looking though new code technologies and learning the most recent practices, then stop by 'Front End Jedi'. It's a great place to share your ideas while learning and helping others gain knowledge. This site is a constant work in progress, I will continuously be adding updates and new technologies with your input.</p>
-								<img src="images/luke.jpg" alt="luke skywalker" />
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Javascript, JQuery</h3></div>
 								</div>
