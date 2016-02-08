@@ -16,34 +16,6 @@ $(window).load(function(){
 
 });
 
-$(window).scroll(function(){
-	isScrolledIntoView('.zoom-scroll1');
-	isScrolledIntoView('.zoom-scroll2');
-	isScrolledIntoView('.zoom-scroll3');
-	isScrolledIntoView('.zoom-scroll4');
-	isScrolledIntoView('.zoom-scroll5');
-	isScrolledIntoView('.zoom-scroll6');
-	isScrolledIntoView('.zoom-scroll7');
-	isScrolledIntoView('.zoom-scroll8');
-});
-
-function isScrolledIntoView(elem){
-    var $elem = $(elem);
-    var $window = $(window);
-
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-
-    if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
-    	$($elem).addClass('bounce');
-    }else{
-    	$($elem).removeClass('bounce');
-    }
-}
-
 $(document).ready(function(){
 	resizeWindow();
 	$('.projects').click(function() {
@@ -69,6 +41,36 @@ $(document).ready(function(){
 
 
 });
+$('#project-select').change(function() {
+    //alert($("#project-select option:selected").text()+'   '+$('.projects-wrap li:nth-child(2)').offset().top);
+	switch ($("#project-select option:selected").text()) {
+	    case "Code Odyssey":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(1)').offset().top+'px' }, 0);
+	        break;
+	    case "Intergalactic Adventures":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(2)').offset().top+'px' }, 0);
+	        break;
+	    case "Supercar Challenge":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(3)').offset().top+'px' }, 0);
+	        break;
+	    case "Car Maintenance & Fuel":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(4)').offset().top+'px' }, 0);
+	        break;
+	    case "Cool Cave Gems":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(5)').offset().top+'px' }, 0);
+	        break;
+	    case "The Solar System":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(6)').offset().top+'px' }, 0);
+	        break;
+	    case "Dreamsite Reality":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(7)').offset().top+'px' }, 0);
+	        break;
+	    case "Front End Jedi":
+	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(8)').offset().top+'px' }, 0);
+	        break;
+	}
+});
+
 
 $(document).on('click', '.contact', function() {
     $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
@@ -178,6 +180,34 @@ function listIn (list, index, interval) {
         setTimeout(function () {
             listIn(list, index, interval);
         }, interval);
+    }
+}
+
+$(window).scroll(function(){
+	isScrolledIntoView('.zoom-scroll1');
+	isScrolledIntoView('.zoom-scroll2');
+	isScrolledIntoView('.zoom-scroll3');
+	isScrolledIntoView('.zoom-scroll4');
+	isScrolledIntoView('.zoom-scroll5');
+	isScrolledIntoView('.zoom-scroll6');
+	isScrolledIntoView('.zoom-scroll7');
+	isScrolledIntoView('.zoom-scroll8');
+});
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+    	$($elem).addClass('bounce');
+    }else{
+    	$($elem).removeClass('bounce');
     }
 }
 

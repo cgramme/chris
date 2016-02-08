@@ -688,7 +688,8 @@ ul.list-options {
       /* For Opera 11.1 to 12.0 */
       background: -moz-linear-gradient(#0399fb, #0070b9);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#0399fb, #0070b9); }
+      background: linear-gradient(#0399fb, #0070b9);
+      display: inline-block; }
       @media screen and (max-width: 900px) {
         .main-content .current-content .wrap .projects-label {
           width: 100px;
@@ -699,6 +700,30 @@ ul.list-options {
           margin-top: 5px;
           margin-bottom: 20px;
           padding: 10px; } }
+    .main-content .current-content .wrap select#project-select {
+      float: right;
+      outline: none;
+      margin-left: 20px;
+      border-radius: 50px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      font-family: "Open Sans Condensed";
+      background: -webkit-linear-gradient(#00091F, #001A57);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#00091F, #001A57);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#00091F, #001A57);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#00091F, #001A57);
+      box-shadow: 1px 1px 5px 0px #000, inset 0 0 3px 0 #222; }
+      .main-content .current-content .wrap select#project-select:hover {
+        cursor: pointer; }
+      .main-content .current-content .wrap select#project-select option {
+        color: #555;
+        text-shadow: 1px 1px 1px #999;
+        border-radius: 10px; }
     .main-content .current-content .wrap .projects-wrap {
       list-style-type: none;
       display: table; }
@@ -796,7 +821,7 @@ ul.list-options {
       .main-content .current-content .wrap .projects-wrap .three {
         background: url(images/screen_shot3.jpg); }
       .main-content .current-content .wrap .projects-wrap .four {
-        background: url(images/screen_shot4.jpg); }
+        background: url(images/screen1.jpg); }
       .main-content .current-content .wrap .projects-wrap .five {
         background: url(images/screen_shot5.png); }
       .main-content .current-content .wrap .projects-wrap .six {
@@ -810,19 +835,19 @@ ul.list-options {
         width: 470px;
         height: 500px;
         display: inline-block;
-        margin-bottom: -55px; }
+        margin-bottom: -85px; }
         .main-content .current-content .wrap .projects-wrap .cell-wrapper .screen-shot {
           background-size: 100% 100%;
-          height: 382px;
+          height: 387px;
           border: 1px solid transparent;
-          width: 280px;
+          width: 260px;
           margin: auto; }
           .main-content .current-content .wrap .projects-wrap .cell-wrapper .screen-shot .cell-phone {
-            margin-top: -25px;
+            margin-top: -42px;
             margin-left: -10px;
-            width: 300px;
+            width: 280px;
             height: 470px;
-            background: url(images/cell_phone2.png);
+            background: url(images/cell_phone3.png);
             background-size: 100% 100%; }
       .main-content .current-content .wrap .projects-wrap .pic-wrapper {
         margin-bottom: -50px;

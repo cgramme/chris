@@ -1,8 +1,18 @@
 <div class="wrap">
 					<div class="projects-label">Projects</div>
+					<select id="project-select">
+					    <option value="code odyssey">Code Odyssey</option>
+					    <option value="intergalactic adventures">Intergalactic Adventures</option>
+					    <option value="supercar">Supercar Challenge</option>
+					    <option value="car app">Car Maintenance &amp; Fuel</option>
+					    <option value="cool gems">Cool Cave Gems</option>
+					    <option value="solar system">The Solar System</option>
+					    <option value="dreamsite">Dreamsite Reality</option>
+					    <option value="jedi">Front End Jedi</option> 
+					</select>
 					<ul class="projects-wrap">
 						<li>
-							<div class="left-side wrapper">
+							<div class="left-side wrapper ">
 								<img class="zoom-scroll1 round" src="images/compass.png" alt="compass" />
 								<h2>Code Odyssey</h2>
 								<p class="indent">Code Odyssey is a website I created to teach aspiring web-developers basic web technologies, tips, tricks, and some intermediate to advanced coding practices. My inspiration for creating the site was to give young and intermediate developers a free place to either learn on a step by step system, or simply to use it as a handy reference. Code Odyssey is a work in progress with much room to grow into the full potential I have planned for its future updates.</p>
