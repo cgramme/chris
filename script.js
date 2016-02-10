@@ -196,6 +196,7 @@ $(window).scroll(function(){
 
 function isScrolledIntoView(elem){
     var $elem = $(elem);
+    
     var $window = $(window);
 
     var docViewTop = $window.scrollTop();
