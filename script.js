@@ -12,7 +12,7 @@ $(window).load(function(){
 	setTimeout(function () {listIn($('li .child-3d'), 0, 300);}, 500);
 	setTimeout(function(){$('.skills').css({'display':'inline-block'});},100);
 
-	wavePicAnima();
+	//wavePicAnima();
 
 });
 
@@ -236,13 +236,14 @@ $(window).resize(function() {
 
 function wavePicAnima (){
 	var i = 0;
+	var numPics = 2;
 	setInterval(function(){
-		i=(i<5)?i:0;
-		$('.text-pic div').css({'background':'url(images/wavea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
-		i=(i<5)?i:0;
+		i=(i<numPics)?i:0;
+		$('.text-pic div').css({'background':'url(images/space_picturea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
+		i=(i<numPics)?i:0;
 		$('.text-pic div').removeClass('fade-out-slow').addClass('fade-in-vslow').delay(5000).queue(function(next){
-			$('.text-pic').css({'background':'url(images/wavea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
-			i=(i<5)?i:0;
+			$('.text-pic').css({'background':'url(images/space_picturea'+((i++)+1)+'.jpg)','background-size':'100% 100%'});
+			i=(i<numPics)?i:0;
                 $('.text-pic div').removeClass('fade-in-slow').addClass('fade-out-slow');
                 next();
         });
