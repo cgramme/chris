@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	$('.name-logo').click(function() {
-  		alert($(window).width());
+  		alert($(document).width());
 	});
 
 	$('li.parent-3d').on('click', function(){
