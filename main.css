@@ -369,6 +369,7 @@ ul.list-options {
       .main-content .current-content .wrap {
         border-radius: 0;
         width: 96%;
+        margin: 0;
         padding: 30px 2%; } }
     .main-content .current-content .wrap h2 {
       font-family: "Open Sans Condensed";
