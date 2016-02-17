@@ -13,7 +13,7 @@ $(window).load(function(){
 	setTimeout(function(){$('.skills').css({'display':'inline-block'});},100);
 
 	//wavePicAnima();
-
+	
 });
 
 $(document).ready(function(){
@@ -38,6 +38,11 @@ $(document).ready(function(){
         });
     });
 
+	$('.cubespinner').on('mouseover',function(){
+		$(this).css({'animation-play-state':'running'});
+	}).on('mouseout click',function(){
+		$(this).css({'animation-play-state':'paused'});
+	});
 
 
 });

@@ -612,12 +612,11 @@ ul.list-options {
   						}				
 					}
 					.text-pic {
-						background: url(images/space_picture.jpg);
+						background: url(images/me_pics_n.png) no-repeat;
 						background-size: 100% 100%;
-						box-shadow: 1px 1px 5px 0 #222;
 						margin: 20px 0 0 20px;
-						width: 500px;
-						height: 300px;
+						width: 400px;
+						height: 320px;
 						float: right;
 						border-radius: 5px;
 						@media screen and (max-width: 1100px) {
@@ -1244,7 +1243,7 @@ ul.list-options {
 //Cube animation
 .stage {
 	float: left;
-    perspective: 500px;
+    perspective: 700px;
     //border: 1px solid red;
     background: rgba(0, 0, 0, 0.5);
     width: 200px;
@@ -1283,6 +1282,7 @@ ul.list-options {
     	line-height: 100px;
     }
   }
+ 
 
   .cubespinner .face1 {
     -webkit-transform: translateZ(100px);
@@ -1358,10 +1358,10 @@ ul.list-options {
   }
   @keyframes startSpin {
     0% {
-      transform: rotateY(0deg) rotateZ(0deg);
+      transform: rotateY(55deg) rotateZ(55deg);
     }
     100% {
-      transform: rotateY(720deg) rotateZ(360deg);
+      transform: rotateY(775deg) rotateZ(415deg);
     }
   }
   .cubespinner {
@@ -1384,10 +1384,18 @@ ul.list-options {
     -moz-transform-origin: 100px 100px 0;
     -ms-transform-origin: 100px 100px 0;
     transform-origin: 100px 100px 0;
+
+    animation-play-state: paused;
+    transform: rotateY(55deg) rotateZ(55deg);
+    &:hover {
+    	cursor: pointer;
+    }
     @media screen and (max-width: 800px) {
     	-webkit-transform-origin: 50px 50px 0;
 	    -moz-transform-origin: 50px 50px 0;
 	    -ms-transform-origin: 50px 50px 0;
 	    transform-origin: 50px 50px 0;
+
+	    animation-play-state: running;
 	}
   }
