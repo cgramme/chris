@@ -395,6 +395,8 @@ ul.list-options {
     .main-content .current-content .wrap #text-title2 {
       font-size: 7em;
       margin-bottom: 10px; }
+      .main-content .current-content .wrap #text-title2:hover {
+        cursor: pointer; }
       @media screen and (max-width: 1000px) {
         .main-content .current-content .wrap #text-title2 {
           font-size: 6em;
@@ -483,6 +485,8 @@ ul.list-options {
           font-size: 1.8em;
           line-height: 23px; } }
     .main-content .current-content .wrap .text-pic {
+      background-image: url(images/me_pics_n.png);
+      background-size: 100% 100%;
       shape-outside: polygon(30px 20px, 0 50px, 0px 130px, 200px 200px, 230px 230px, 150px 280px, 150px 300px, 150px 320px);
       width: 400px;
       height: 320px;

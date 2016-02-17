@@ -38,10 +38,10 @@ $(document).ready(function(){
         });
     });
 
-	$('.cubespinner').on('mouseover',function(){
-		$(this).css({'animation-play-state':'running'});
+	$('.cubespinner, #text-title2').on('mouseover',function(){
+		$('.cubespinner').css({'animation-play-state':'running'});
 	}).on('mouseout click',function(){
-		$(this).css({'animation-play-state':'paused'});
+		$('.cubespinner').css({'animation-play-state':'paused'});
 	});
 
 
