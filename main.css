@@ -483,13 +483,12 @@ ul.list-options {
           font-size: 1.8em;
           line-height: 23px; } }
     .main-content .current-content .wrap .text-pic {
-      background: url(images/me_pics_n.png) no-repeat;
-      background-size: 100% 100%;
-      margin: 20px 0 0 20px;
+      shape-outside: polygon(30px 20px, 0 50px, 0px 130px, 200px 200px, 230px 230px, 150px 280px, 150px 300px, 150px 320px);
       width: 400px;
       height: 320px;
       float: right;
-      border-radius: 5px; }
+      margin-left: 10px;
+      margin-bottom: 10px; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .text-pic {
           float: left;
@@ -523,14 +522,12 @@ ul.list-options {
       float: right; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .text-painting {
-          display: none;
-          background: url(images/wave2.jpg);
+          display: block;
+          background: url(images/me_pics_n.png);
           background-size: 100% 100%;
-          box-shadow: 1px 1px 5px 0 #222;
           margin: 20px 0 0 5px;
           width: 300px;
-          height: 220px;
-          border-radius: 5px; } }
+          height: 220px; } }
       @media screen and (max-width: 550px) {
         .main-content .current-content .wrap .text-painting {
           width: 200px;
