@@ -115,9 +115,9 @@ keyframes buttonHover to {
 @media screen and (max-width: 600px) {
   @keyframes slideAnima {
     0% {
-      top: -600px; }
+      transform: translateY(-600px); }
     100% {
-      top: 0; } } }
+      transform: translateY(0px); } } }
 .slide-anima {
   -webkit-animation: slideAnima 2.5s forwards;
   animation: slideAnima 2.5s ease-out; }
