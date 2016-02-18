@@ -508,9 +508,31 @@ ul.list-options {
     					font-size: 2.5em;
   					}
 				}
+				@keyframes arrowLeft {
+					100% {
+						opacity: 0;
+						left: 0px;
+					}
+					60% {
+						opacity: 1;
+					}
+					20% {
+						opacity: 1;
+					}
+					0% {
+						opacity: 0;
+						left: 50px;
+					}
+				}
+				.arrow-left {
+				    -webkit-animation: arrowLeft 2s forwards infinite;
+				    animation: arrowLeft 2s forwards infinite;
+				}
 				#text-title2 {
 					font-size: 7em;
 					margin-bottom: 10px;
+					position: relative;
+					display: inline-block;
 					&:hover {
 						cursor: pointer;
 					}
@@ -521,9 +543,29 @@ ul.list-options {
   					@media screen and (max-width: 600px) {
     					font-size: 4em;
     					margin-bottom: 20px;
+    					left: 40px;
   					}
   					@media screen and (max-width: 470px) {
     					font-size: 3em;
+  					}
+  					@media screen and (max-width: 330px) {
+  						display: block;
+  						left: 0;
+  					}
+  					i {
+  						font-size: 0.5em;
+  						font-weight: 100;
+  						position: absolute;
+  						line-height: 10px;
+  						color: #999;
+  						//top: 50px;
+  						transform: translateY(50px) translateX(-30px);
+  						@media screen and (max-width: 470px) {
+  							transform: translateY(36px) translateX(-23px);
+  						}
+  						@media screen and (max-width: 330px) {
+  							display: none;
+  						}
   					}
 				}
 				
@@ -672,7 +714,7 @@ ul.list-options {
 						display: none;
 						float: right;
 						@media screen and (max-width: 1100px) {
-							shape-outside: polygon(10% 0, 10% 17.25%, 0 19.625%, 0 45.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
+							shape-outside: polygon(10% 0, 10% 19.25%, 0 19.625%, 0 42.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
 							display: block;
 							background: url(images/me_pics_n.png);
 							background-size: 100% 100%;
@@ -685,8 +727,8 @@ ul.list-options {
 							height: 160px;
 						}
 						@media screen and (max-width: 400px) {
-							width: 150px;
-							height: 120px;
+							width: 170px;
+							height: 135px;
 						}
 					}
 
@@ -1383,7 +1425,7 @@ ul.list-options {
   }
   .cubespinner {
     -webkit-animation-name: startSpin;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 20s;
 

@@ -224,8 +224,13 @@ function resizeWindow() {
 	}else{
 		$('.child-3d').width(120).height(120).css({'margin':'0 5px'});
 	}
+	if(width < 580){
+		$('#text-title2').html("<i class='arrow-left fa fa-arrow-left'></i>Think inside<br />this box");
+	}else{
+		$('#text-title2').html("Think inside this box");
+	}
 
-	if(width<800) {
+	if(width<800){
 		$('.box .pic').height($('.box .pic').width());
 		$('.footer h2').hide();
 	}else{

@@ -398,9 +398,25 @@ ul.list-options {
       @media screen and (max-width: 320px) {
         .main-content .current-content .wrap h2 {
           font-size: 2.5em; } }
+@keyframes arrowLeft {
+  100% {
+    opacity: 0;
+    left: 0px; }
+  60% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  0% {
+    opacity: 0;
+    left: 50px; } }
+    .main-content .current-content .wrap .arrow-left {
+      -webkit-animation: arrowLeft 2s forwards infinite;
+      animation: arrowLeft 2s forwards infinite; }
     .main-content .current-content .wrap #text-title2 {
       font-size: 7em;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block; }
       .main-content .current-content .wrap #text-title2:hover {
         cursor: pointer; }
       @media screen and (max-width: 1000px) {
@@ -410,10 +426,28 @@ ul.list-options {
       @media screen and (max-width: 600px) {
         .main-content .current-content .wrap #text-title2 {
           font-size: 4em;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px;
+          left: 40px; } }
       @media screen and (max-width: 470px) {
         .main-content .current-content .wrap #text-title2 {
           font-size: 3em; } }
+      @media screen and (max-width: 330px) {
+        .main-content .current-content .wrap #text-title2 {
+          display: block;
+          left: 0; } }
+      .main-content .current-content .wrap #text-title2 i {
+        font-size: 0.5em;
+        font-weight: 100;
+        position: absolute;
+        line-height: 10px;
+        color: #999;
+        transform: translateY(50px) translateX(-30px); }
+        @media screen and (max-width: 470px) {
+          .main-content .current-content .wrap #text-title2 i {
+            transform: translateY(36px) translateX(-23px); } }
+        @media screen and (max-width: 330px) {
+          .main-content .current-content .wrap #text-title2 i {
+            display: none; } }
     .main-content .current-content .wrap h3 {
       color: #222;
       font-size: 2em;
@@ -536,7 +570,7 @@ ul.list-options {
       float: right; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .text-painting {
-          shape-outside: polygon(10% 0, 10% 17.25%, 0 19.625%, 0 45.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
+          shape-outside: polygon(10% 0, 10% 19.25%, 0 19.625%, 0 42.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
           display: block;
           background: url(images/me_pics_n.png);
           background-size: 100% 100%;
@@ -549,8 +583,8 @@ ul.list-options {
           height: 160px; } }
       @media screen and (max-width: 400px) {
         .main-content .current-content .wrap .text-painting {
-          width: 150px;
-          height: 120px; } }
+          width: 170px;
+          height: 135px; } }
     .main-content .current-content .wrap ul.slide-content {
       position: relative;
       z-index: 10;
@@ -1178,7 +1212,7 @@ ul.list-options {
     transform: rotateY(775deg) rotateZ(415deg); } }
 .cubespinner {
   -webkit-animation-name: startSpin;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 20s;
   animation-name: startSpin;
