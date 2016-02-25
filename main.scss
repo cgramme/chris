@@ -666,13 +666,15 @@ ul.list-options {
   						}				
 					}
 					.text-pic {
-						background-image: url(images/me_pics_n.png);
+						background-image: url(images/surfer_suit.jpg);
 						background-size: 100% 100%;
-						shape-outside: polygon(10% 0, 10% 17.25%, 0 19.625%, 4% 37.625%, 12% 45%, 32% 55%, 30% 62.5%, 30% 71.875%, 35% 87.5%, 37% 90.75%, 45% 100%);
+						border-radius: 5px;
+						box-shadow: 1px 1px 3px #333;
+						//shape-outside: polygon(10% 0, 10% 17.25%, 0 19.625%, 4% 37.625%, 12% 45%, 32% 55%, 30% 62.5%, 30% 71.875%, 35% 87.5%, 37% 90.75%, 45% 100%);
 						width: 500px;
-						height: 400px;
+						height: 310px;
 						float: right;
-						margin-left: 20px;
+						margin: 110px 0 0 10px;
 						//margin-bottom: 10px;
 						@media screen and (max-width: 1100px) {
 							shape-outside: none;
@@ -701,12 +703,17 @@ ul.list-options {
 							width: 92px;
 							height: 92px;
 						}
-						div {
-							display: none;
-							background: url(images/wavea2.jpg);
-							background-size: 100% 100%;
-							width: inherit;
-						    height: inherit;
+						p {
+							font-family: "Open Sans Condensed";
+							text-align: center;
+							margin-top: 80px;
+							padding: 5px;
+							color: #fff;
+							font-size: 3.5em;
+							text-shadow: 1px 1px 5px #000;
+							@media screen and (max-width: 1100px) {
+								display:  none;
+							}
 						}
 					}
 				
