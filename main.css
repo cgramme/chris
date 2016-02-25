@@ -566,25 +566,61 @@ ul.list-options {
         width: inherit;
         height: inherit; }
     .main-content .current-content .wrap .text-painting {
-      display: none;
-      float: right; }
+      display: none; }
       @media screen and (max-width: 1100px) {
         .main-content .current-content .wrap .text-painting {
-          shape-outside: polygon(10% 0, 10% 19.25%, 0 22.625%, 0 42.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
           display: block;
-          background: url(images/me_pics_n.png);
+          background: url(images/surfer_suit.jpg) no-repeat;
           background-size: 100% 100%;
           margin: 20px 0 0 5px;
-          width: 300px;
-          height: 240px; } }
-      @media screen and (max-width: 550px) {
+          width: 500px;
+          height: 290px;
+          border-radius: 5px;
+          box-shadow: 1px 1px 2px 0 #555;
+          float: right;
+          font-family: "Open Sans Condensed";
+          text-align: center; } }
+      @media screen and (max-width: 800px) {
         .main-content .current-content .wrap .text-painting {
-          width: 200px;
-          height: 160px; } }
+          width: 350px;
+          height: 200px; } }
+      @media screen and (max-width: 600px) {
+        .main-content .current-content .wrap .text-painting {
+          width: 250px;
+          height: 150px; } }
+      @media screen and (max-width: 500px) {
+        .main-content .current-content .wrap .text-painting {
+          width: 100%;
+          height: 250px;
+          margin: auto;
+          float: none; } }
       @media screen and (max-width: 400px) {
         .main-content .current-content .wrap .text-painting {
-          width: 170px;
-          height: 135px; } }
+          height: 200px; } }
+      .main-content .current-content .wrap .text-painting p {
+        margin: 100px auto 0 auto;
+        padding: 5px;
+        color: #fff;
+        font-size: 3em;
+        text-shadow: 1px 1px 5px #000;
+        background: rgba(0, 0, 0, 0.7); }
+        @media screen and (max-width: 800px) {
+          .main-content .current-content .wrap .text-painting p {
+            font-size: 2em;
+            margin-top: 70px; } }
+        @media screen and (max-width: 600px) {
+          .main-content .current-content .wrap .text-painting p {
+            margin-top: 38px;
+            font-size: 1.8em; } }
+        @media screen and (max-width: 500px) {
+          .main-content .current-content .wrap .text-painting p {
+            padding-top: 80px;
+            background: none;
+            font-size: 2.5em; } }
+        @media screen and (max-width: 400px) {
+          .main-content .current-content .wrap .text-painting p {
+            font-size: 2em;
+            padding-top: 60px; } }
     .main-content .current-content .wrap ul.slide-content {
       position: relative;
       z-index: 10;
@@ -732,7 +768,8 @@ ul.list-options {
             font-size: 50px;
             color: #000; }
     .main-content .current-content .wrap .projects-label {
-      font-size: 3em;
+      font-family: "Open Sans Condensed";
+      font-size: 4em;
       border-radius: 50px;
       font-weight: normal;
       padding: 18px;
@@ -754,23 +791,22 @@ ul.list-options {
       @media screen and (max-width: 900px) {
         .main-content .current-content .wrap .projects-label {
           width: 100px;
-          font-size: 2em; } }
+          font-size: 2.5em; } }
       @media screen and (max-width: 600px) {
         .main-content .current-content .wrap .projects-label {
           width: 80px;
-          margin-top: 5px;
           margin-bottom: 20px;
-          padding: 10px; } }
+          padding: 5px; } }
     .main-content .current-content .wrap select#project-select {
       float: right;
       outline: none;
-      margin-left: 20px;
       border-radius: 50px;
       padding: 10px;
       font-size: 30px;
       color: #fff;
       text-shadow: 1px 1px 1px #000;
       font-family: "Open Sans Condensed";
+      margin-top: -5px;
       background: -webkit-linear-gradient(#00091F, #001A57);
       /* For Safari 5.1 to 6.0 */
       background: -o-linear-gradient(#00091F, #001A57);
@@ -781,40 +817,76 @@ ul.list-options {
       box-shadow: 1px 1px 5px 0px #000, inset 0 0 3px 0 #222; }
       .main-content .current-content .wrap select#project-select:hover {
         cursor: pointer; }
+      @media screen and (max-width: 600px) {
+        .main-content .current-content .wrap select#project-select {
+          margin-bottom: 20px;
+          padding: 5px;
+          font-size: 25px; } }
+      @media screen and (max-width: 400px) {
+        .main-content .current-content .wrap select#project-select {
+          display: block;
+          float: none;
+          margin-top: -10px; } }
       .main-content .current-content .wrap select#project-select option {
         color: #555;
         text-shadow: 1px 1px 1px #999;
         border-radius: 10px; }
+        @media screen and (max-width: 400px) {
+          .main-content .current-content .wrap select#project-select option {
+            font-size: 20px; } }
     .main-content .current-content .wrap .projects-wrap {
       list-style-type: none;
-      display: table; }
+      display: table;
+      border: 1px solid red; }
+      @media screen and (max-width: 1100px) {
+        .main-content .current-content .wrap .projects-wrap {
+          text-align: center;
+          margin-top: 5px; } }
+      .main-content .current-content .wrap .projects-wrap li {
+        display: inline-table;
+        width: 1000px;
+        padding: 20px;
+        margin-top: 20px;
+        border-bottom: 1px solid #ddd; }
+        @media screen and (max-width: 1100px) {
+          .main-content .current-content .wrap .projects-wrap li {
+            border-bottom: none;
+            width: 95%;
+            padding: 0; } }
+        @media screen and (max-width: 400px) {
+          .main-content .current-content .wrap .projects-wrap li {
+            width: 100%; } }
       .main-content .current-content .wrap .projects-wrap .wrapper {
         display: inline-block;
         width: 470px; }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 1100px) {
           .main-content .current-content .wrap .projects-wrap .wrapper {
-            margin: 20px 0; } }
+            width: 100%;
+            text-align: left;
+            border: 1px solid red; } }
         .main-content .current-content .wrap .projects-wrap .wrapper h2 {
           font-size: 5em;
           color: #000;
-          line-height: 1.1em;
           vertical-align: top;
           margin-bottom: 20px;
           font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif; }
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 700px) {
+            .main-content .current-content .wrap .projects-wrap .wrapper h2 {
+              font-size: 3.5em; } }
+          @media screen and (max-width: 320px) {
             .main-content .current-content .wrap .projects-wrap .wrapper h2 {
               font-size: 2.5em; } }
-          @media screen and (max-width: 420px) {
-            .main-content .current-content .wrap .projects-wrap .wrapper h2 {
-              font-size: 2em; } }
         .main-content .current-content .wrap .projects-wrap .wrapper p {
           color: #333;
           font-size: 2.2em;
           font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
           text-align: justify; }
-          @media screen and (max-width: 450px) {
+          @media screen and (max-width: 700px) {
             .main-content .current-content .wrap .projects-wrap .wrapper p {
-              font-size: 1.4em; } }
+              font-size: 1.8em; } }
+          @media screen and (max-width: 370px) {
+            .main-content .current-content .wrap .projects-wrap .wrapper p {
+              font-size: 1.5em; } }
         .main-content .current-content .wrap .projects-wrap .wrapper img {
           display: inline-block;
           float: left;
@@ -824,10 +896,6 @@ ul.list-options {
           box-shadow: 1px 1px 5px 0 #000;
           width: 110px;
           height: 110px; }
-          @media screen and (max-width: 800px) {
-            .main-content .current-content .wrap .projects-wrap .wrapper img {
-              width: 70px;
-              height: 70px; } }
         .main-content .current-content .wrap .projects-wrap .wrapper .round {
           border-radius: 50%; }
         .main-content .current-content .wrap .projects-wrap .wrapper .no-shadow {
@@ -840,15 +908,20 @@ ul.list-options {
           margin-top: 10px;
           background-color: rgba(0, 0, 0, 0.95);
           box-shadow: 1px 1px 5px 0px #000; }
+          @media screen and (max-width: 450px) {
+            .main-content .current-content .wrap .projects-wrap .wrapper .technologies {
+              width: 90%; } }
           .main-content .current-content .wrap .projects-wrap .wrapper .technologies h3 {
             padding: 0 5px;
             font-size: 2.5em;
             color: #fff;
             text-shadow: 1px 1px 5px #000;
-            font-family: "Open Sans Condensed"; }
+            font-family: "Open Sans Condensed";
+            line-height: 35px; }
             @media screen and (max-width: 450px) {
               .main-content .current-content .wrap .projects-wrap .wrapper .technologies h3 {
-                font-size: 1.5em; } }
+                font-size: 1.5em;
+                line-height: 20px; } }
         .main-content .current-content .wrap .projects-wrap .wrapper button {
           padding: 5px 10px;
           font-size: 2.5em;
@@ -862,17 +935,13 @@ ul.list-options {
           font-family: "Open Sans Condensed"; }
           .main-content .current-content .wrap .projects-wrap .wrapper button:hover {
             box-shadow: 2px 2px 6px 3px #000; }
+          @media screen and (max-width: 450px) {
+            .main-content .current-content .wrap .projects-wrap .wrapper button {
+              font-size: 1.5em; } }
         .main-content .current-content .wrap .projects-wrap .wrapper .view-site {
           background-color: #387a43; }
         .main-content .current-content .wrap .projects-wrap .wrapper .view-code {
           background-color: #384d7a; }
-      .main-content .current-content .wrap .projects-wrap li {
-        display: inline-table;
-        width: 1000px;
-        overflow: hidden;
-        padding: 20px;
-        margin-top: 20px;
-        border-bottom: 1px solid #ddd; }
       .main-content .current-content .wrap .projects-wrap .left-side {
         margin-right: 50px; }
       .main-content .current-content .wrap .projects-wrap .one {
@@ -897,6 +966,9 @@ ul.list-options {
         height: 500px;
         display: inline-block;
         margin-bottom: -85px; }
+        @media screen and (max-width: 1100px) {
+          .main-content .current-content .wrap .projects-wrap .cell-wrapper {
+            display: none; } }
         .main-content .current-content .wrap .projects-wrap .cell-wrapper .screen-shot {
           background-size: 100% 100%;
           height: 387px;
@@ -915,6 +987,9 @@ ul.list-options {
         width: 470px;
         height: 500px;
         display: inline-block; }
+        @media screen and (max-width: 1100px) {
+          .main-content .current-content .wrap .projects-wrap .pic-wrapper {
+            display: none; } }
         .main-content .current-content .wrap .projects-wrap .pic-wrapper .screen-shot {
           background-size: 100% 100%;
           height: 310px;
@@ -931,7 +1006,8 @@ ul.list-options {
     .main-content .current-content .wrap .interests-content {
       padding-bottom: 10px; }
       .main-content .current-content .wrap .interests-content div.interests-label {
-        font-size: 3em;
+        font-family: "Open Sans Condensed";
+        font-size: 4em;
         border-radius: 50px;
         font-weight: normal;
         padding: 18px;
@@ -952,13 +1028,12 @@ ul.list-options {
         @media screen and (max-width: 900px) {
           .main-content .current-content .wrap .interests-content div.interests-label {
             width: 100px;
-            font-size: 2em; } }
+            font-size: 2.5em; } }
         @media screen and (max-width: 600px) {
           .main-content .current-content .wrap .interests-content div.interests-label {
             width: 80px;
-            margin-top: 5px;
             margin-bottom: 20px;
-            padding: 10px; } }
+            padding: 5px; } }
       .main-content .current-content .wrap .interests-content img {
         border-radius: 5px;
         box-shadow: 1px 1px 5px 0 #000;

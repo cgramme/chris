@@ -46,8 +46,7 @@ $(document).ready(function(){
 
 
 });
-$('#project-select').change(function() {
-    //alert($("#project-select option:selected").text()+'   '+$('.projects-wrap li:nth-child(2)').offset().top);
+$(document).on('change','#project-select',function(){
 	switch ($("#project-select option:selected").text()) {
 	    case "Code Odyssey":
 	        $('html, body').animate({ scrollTop: $('.projects-wrap li:nth-child(1)').offset().top+'px' }, 0);

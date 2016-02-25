@@ -55,7 +55,8 @@ $color-4-d: #006666;
   background: linear-gradient($startG, $finishG);
 }
 @mixin sectionLabel (){
-	font-size: 3em;
+	font-family: "Open Sans Condensed";
+	font-size: 4em;
 	border-radius: 50px;
 	font-weight: normal;
 	padding: 18px;
@@ -68,13 +69,12 @@ $color-4-d: #006666;
 	box-shadow: 1px 1px 5px 0px #000, inset 0 0 3px 0 #222;
 	@media screen and (max-width: 900px) {
     	width: 100px;
-		font-size: 2em;
+		font-size: 2.5em;
   	}
 	@media screen and (max-width: 600px) {
     	width: 80px;
-    	margin-top: 5px;
     	margin-bottom: 20px;
-    	padding: 10px;
+    	padding: 5px;
   	}
 }
 @mixin zoomOnHover (){
@@ -712,23 +712,64 @@ ul.list-options {
 				
 					.text-painting {
 						display: none;
-						float: right;
 						@media screen and (max-width: 1100px) {
-							shape-outside: polygon(10% 0, 10% 19.25%, 0 22.625%, 0 42.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
+							//shape-outside: polygon(10% 0, 10% 19.25%, 0 22.625%, 0 42.625%, 30% 62.5%, 30% 71.875%, 30% 87.5%, 37% 90.75%, 45% 100%);
 							display: block;
-							background: url(images/me_pics_n.png);
+							background: url(images/surfer_suit.jpg) no-repeat;
 							background-size: 100% 100%;
 							margin: 20px 0 0 5px;
-							width: 300px;
-							height: 240px;
+							width: 500px;
+							height: 290px;
+							border-radius: 5px;
+							box-shadow: 1px 1px 2px 0 #555;
+							float: right;
+							font-family: "Open Sans Condensed";
+							text-align: center;
 						}
-						@media screen and (max-width: 550px) {
-							width: 200px;
-							height: 160px;
+						@media screen and (max-width: 800px) {
+							width: 350px;
+							height: 200px;
+						}
+						@media screen and (max-width: 600px) {
+							width: 250px;
+							height: 150px;
+						}
+						@media screen and (max-width: 500px) {
+							width: 100%;
+							height: 250px;
+							margin: auto;
+							float: none;
 						}
 						@media screen and (max-width: 400px) {
-							width: 170px;
-							height: 135px;
+							height: 200px;
+						}
+						p {
+							margin: 100px auto 0 auto;
+							padding: 5px;
+							color: #fff;
+							font-size: 3em;
+							text-shadow: 1px 1px 5px #000;
+							background: rgba(0,0,0,0.7);
+							//border-radius: 10px;
+
+							@media screen and (max-width: 800px) {
+								font-size: 2em;
+								margin-top: 70px;
+							}
+							@media screen and (max-width: 600px) {
+								margin-top: 38px;
+								font-size: 1.8em;
+								
+							}
+							@media screen and (max-width: 500px) {
+								padding-top: 80px;
+								background: none;
+								font-size: 2.5em;
+							}
+							@media screen and (max-width: 400px) {
+								font-size: 2em;
+								padding-top: 60px;
+							}
 						}
 					}
 
@@ -906,148 +947,179 @@ ul.list-options {
 					@include sectionLabel();
 					@include gradientHue($color2-1-l, $color2-1-lm);
 					display: inline-block;
+					@media screen and (max-width: 600px) {
+					}
 				}
 				select#project-select {
 					float: right;
 					outline:none;
-					margin-left: 20px;
 					border-radius: 50px;
 					padding: 10px;
 					font-size: 30px;
 					color: #fff;
 					text-shadow: 1px 1px 1px #000;
 					font-family: "Open Sans Condensed";
+					margin-top: -5px;
 					@include gradientHue(#00091F, #001A57);
 					box-shadow: 1px 1px 5px 0px #000, inset 0 0 3px 0 #222;
 					&:hover {
 						cursor: pointer;
 					}
+					@media screen and (max-width: 600px) {
+				    	margin-bottom: 20px;
+				    	padding: 5px;
+				    	font-size: 25px;
+				  	}
+				  	@media screen and (max-width: 400px) {
+				  		display: block;
+				  		float: none;
+				  		margin-top: -10px;
+				  	}
 					option {
 						color: #555;
 						text-shadow: 1px 1px 1px #999;
 						border-radius: 10px;
+						@media screen and (max-width: 400px) {
+							font-size: 20px;
+						}
 						
 					}
 				}
 				.projects-wrap {
 					list-style-type: none;
 					display: table;
-					.wrapper {
-						display: inline-block;
-						width: 470px;
-						//border: 1px solid red;
-						//background: url(images/repeat2.jpg);
-						//border-radius: 5px 5px 5px 5px;
-						//padding: 20px;
-						//box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000;
-					@media screen and (max-width: 700px) {
-						margin: 20px 0;
-  					}
-  					img {
-  						//opacity: 0;
-  					}
-					h2 {
-						font-size: 5em;
-						//text-shadow: 1px 1px 1px #000;
-						color: #000;
-						line-height: 1.1em;
-						vertical-align: top;
-						margin-bottom: 20px;
-						font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
-						@media screen and (max-width: 500px) {
-							font-size: 2.5em;
-  						}
-  						@media screen and (max-width: 420px) {
-							font-size: 2em;
-  						}
+					border: 1px solid red;
+					@media screen and (max-width: 1100px) {
+						text-align: center;
+						margin-top: 5px;
 					}
-					p {
-						color: #333;
-						font-size: 2.2em;
-						font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-						text-align: justify;
-						//text-shadow: 1px 1px 3px #000;
-						@media screen and (max-width: 450px) {
-							font-size: 1.4em;
-  						}
-					}
-					img {
-						display: inline-block;
-						float: left;
-						margin-top: 0px;
-						margin-right: 10px;
-						border-radius: 5px;
-						box-shadow: 1px 1px 5px 0 #000;
-						width: 110px;
-						height: 110px;
-						@media screen and (max-width: 800px) {
-							width: 70px;
-							height: 70px;
-						}
-					}
-					.round {
-						border-radius: 50%;
-					}
-					.no-shadow {
-						box-shadow: none;
-					}
-					.technologies {
-						border: 1px solid #aaa;
-						padding: 10px 10px;
-						display: inline-block;
-						border-radius: 10px;
-						margin-top: 10px;
-						background-color: hsla(120, 60%, 0%, 0.95);
-						box-shadow: 1px 1px 5px 0px #000;
-
-						h3 {
-							padding: 0 5px;
-							font-size: 2.5em;
-							color: #fff;
-							text-shadow: 1px 1px 5px #000;
-							font-family: "Open Sans Condensed";
-							@media screen and (max-width: 450px) {
-							font-size: 1.5em;
-  						}
-						}
-					}
-
-					button {
-						padding: 5px 10px;
-						font-size: 2.5em;
-						color: #fff;
-						border-radius: 10px;
-						box-shadow: 2px 2px 5px 2px #000;
-						margin-right: 10px;
-						margin-top: 10px;
-						cursor: pointer;
-						text-shadow: 1px 1px 5px #000;
-						font-family: "Open Sans Condensed";
-						&:hover {
-							box-shadow: 2px 2px 6px 3px #000;
-						}
-					}
-					.view-site {
-						background-color: #387a43;
-					}
-					.view-code {
-						background-color: #384d7a;
-					}
-				}
 					li {
 						display: inline-table;
 						//float: left;
 						//vertical-align: top;
 						width: 1000px;
 						//height: 500px;
-						overflow: hidden;
 						padding: 20px;
 						margin-top: 20px;
 						border-bottom: 1px solid #ddd;
 						//border: 1px solid red;
+						@media screen and (max-width: 1100px) {
+							border-bottom: none;
+							width: 95%;
+							padding: 0;
+						}
+						@media screen and (max-width: 400px) {
+							width: 100%;
+						}
 
 					}
-				
+					.wrapper {
+						display: inline-block;
+						width: 470px;
+						//border: 1px solid red;
+						//border-radius: 5px 5px 5px 5px;
+						//padding: 20px;
+						//box-shadow: 2px 2px 10px 2px #000, inset 0 0 2px 0 #000;
+						@media screen and (max-width: 1100px) {
+							width: 100%;
+							text-align: left;
+							border: 1px solid red;
+						}
+						h2 {
+							font-size: 5em;
+							//text-shadow: 1px 1px 1px #000;
+							color: #000;
+							vertical-align: top;
+							margin-bottom: 20px;
+							font-family: "Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
+							@media screen and (max-width: 700px) {
+								font-size: 3.5em;
+								//font-weight: bold;
+	  						}
+	  						@media screen and (max-width: 320px) {
+								font-size: 2.5em;
+	  						}
+						}
+						p {
+							color: #333;
+							font-size: 2.2em;
+							font-family: Raleway, "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+							text-align: justify;
+							//text-shadow: 1px 1px 3px #000;
+							@media screen and (max-width: 700px) {
+								font-size: 1.8em;
+	  						}
+	  						@media screen and (max-width: 370px) {
+	  							font-size: 1.5em;
+	  						}
+						}
+						img {
+							display: inline-block;
+							float: left;
+							margin-top: 0px;
+							margin-right: 10px;
+							border-radius: 5px;
+							box-shadow: 1px 1px 5px 0 #000;
+							width: 110px;
+							height: 110px;
+							
+						}
+						.round {
+							border-radius: 50%;
+						}
+						.no-shadow {
+							box-shadow: none;
+						}
+						.technologies {
+							border: 1px solid #aaa;
+							padding: 10px 10px;
+							display: inline-block;
+							border-radius: 10px;
+							margin-top: 10px;
+							background-color: hsla(120, 60%, 0%, 0.95);
+							box-shadow: 1px 1px 5px 0px #000;
+							@media screen and (max-width: 450px) {
+								width:90%;
+							}
+							h3 {
+								padding: 0 5px;
+								font-size: 2.5em;
+								color: #fff;
+								text-shadow: 1px 1px 5px #000;
+								font-family: "Open Sans Condensed";
+								line-height: 35px;
+								@media screen and (max-width: 450px) {
+								font-size: 1.5em;
+								line-height: 20px;
+	  							}
+							}
+						}
+
+						button {
+							padding: 5px 10px;
+							font-size: 2.5em;
+							color: #fff;
+							border-radius: 10px;
+							box-shadow: 2px 2px 5px 2px #000;
+							margin-right: 10px;
+							margin-top: 10px;
+							cursor: pointer;
+							text-shadow: 1px 1px 5px #000;
+							font-family: "Open Sans Condensed";
+							&:hover {
+								box-shadow: 2px 2px 6px 3px #000;
+							}
+							@media screen and (max-width: 450px) {
+								font-size: 1.5em;
+							}
+						}
+						.view-site {
+							background-color: #387a43;
+						}
+						.view-code {
+							background-color: #384d7a;
+						}
+					}
 				.left-side {
 					margin-right: 50px;
 				}
@@ -1081,6 +1153,9 @@ ul.list-options {
 					height: 500px;
 					display: inline-block;
 					margin-bottom: -85px;
+					@media screen and (max-width: 1100px) {
+						display: none;
+					}
 					.screen-shot {
 						background-size: 100% 100%;
 						height: 387px;
@@ -1102,6 +1177,9 @@ ul.list-options {
 					width:470px;
 					height: 500px;
 					display: inline-block;
+					@media screen and (max-width: 1100px) {
+						display: none;
+					}
 					.screen-shot {
 						background-size: 100% 100%;
 						height: 310px;
