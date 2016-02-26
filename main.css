@@ -448,6 +448,20 @@ ul.list-options {
         @media screen and (max-width: 330px) {
           .main-content .current-content .wrap #text-title2 i {
             display: none; } }
+    .main-content .current-content .wrap .move-it {
+      color: #fff;
+      float: right;
+      margin-top: 29px;
+      font-family: "Open Sans Condensed";
+      font-size: 3em;
+      border-radius: 10px;
+      padding: 5px;
+      background: #ccc; }
+      .main-content .current-content .wrap .move-it:hover {
+        cursor: pointer; }
+      @media screen and (max-width: 1100px) {
+        .main-content .current-content .wrap .move-it {
+          display: none; } }
     .main-content .current-content .wrap h3 {
       color: #222;
       font-size: 2em;
@@ -530,7 +544,7 @@ ul.list-options {
       border-radius: 5px;
       box-shadow: 1px 1px 3px #333;
       width: 500px;
-      height: 310px;
+      height: 320px;
       float: right;
       margin: 110px 0 0 10px; }
       @media screen and (max-width: 1100px) {
@@ -563,7 +577,8 @@ ul.list-options {
       .main-content .current-content .wrap .text-pic p {
         font-family: "Open Sans Condensed";
         text-align: center;
-        margin-top: 80px;
+        margin-top: 100px;
+        background: rgba(0, 0, 0, 0.5);
         padding: 5px;
         color: #fff;
         font-size: 3.5em;

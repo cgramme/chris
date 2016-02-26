@@ -38,7 +38,7 @@ $(document).ready(function(){
         });
     });
 
-	$('.cubespinner, #text-title2').on('mouseover',function(){
+	$('.cubespinner, .move-it, #text-title2').on('mouseover',function(){
 		$('.cubespinner').css({'animation-play-state':'running'});
 	}).on('mouseout click',function(){
 		$('.cubespinner').css({'animation-play-state':'paused'});
