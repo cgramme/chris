@@ -482,7 +482,7 @@ ul.list-options {
           display: none;
           margin: 0; } }
     .main-content .current-content .wrap .profile-img {
-      background: url(images/profile_sketchsa.png) no-repeat;
+      background: url(images/profile_sketch_chris.jpg) no-repeat;
       background-size: 100% 100%;
       width: 200px;
       height: 200px;
@@ -553,7 +553,7 @@ ul.list-options {
           float: left;
           height: 230px;
           width: 230px;
-          background: url(images/profile_sketchsa.png) no-repeat;
+          background: url(images/profile_sketch_chris.jpg) no-repeat;
           background-size: 100% 100%;
           box-shadow: none;
           margin: 0 10px 5px 0; } }
@@ -1206,8 +1206,7 @@ ul.list-options {
     .stage {
       width: 100px;
       height: 100px;
-      margin: 20px;
-      margin-top: 70px; } }
+      margin: 20px; } }
 
 .cubespinner div {
   font-family: "Open Sans Condensed";
