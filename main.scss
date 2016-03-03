@@ -217,7 +217,20 @@ keyframes buttonHover {
     animation: bounce 0.5s forwards;
 }
 
+@keyframes fadeInPause {
+    0%{opacity: 0}
+    30%{opacity: 0}
+    100%{opacity: 1}
+}
+@-webkit-keyframes fadeInPause {
+    from{}
 
+    to{opacity: 1}
+}
+.fade-in-pause {
+    -webkit-animation: fadeInPause 5s forwards;
+    animation: fadeInPause 5s forwards;
+}
 
 @keyframes fadeIn {
     from{}
@@ -254,6 +267,40 @@ keyframes buttonHover {
 .fade-out-slow {
     -webkit-animation: fadeOut 5s forwards;
     animation: fadeOut 5s forwards;
+}
+@keyframes slideUpAnima {
+    0%{
+    	-webkit-transform: translateY(200px);
+    }
+    100%{
+    	-webkit-transform: translateY(0px);
+    }
+}
+@-webkit-keyframes slideUpAnima {
+    0%{
+    	transform: rotateY(0deg) rotateX(0deg) scale(1);
+    	-webkit-transform: rotateY(0deg) rotateX(0deg) scale(1);
+    }
+    100%{
+    	transform: rotateY(0deg) rotateX(180deg) scale(0);
+    	-webkit-transform: rotateY(0deg) rotateX(180deg) scale(0);
+    }
+}
+.slide-up-anima1 {
+    -webkit-animation: slideUpAnima 1.2s forwards;
+    animation: slideUpAnima 1.2s forwards;
+}
+.slide-up-anima2 {
+    -webkit-animation: slideUpAnima 1.6s forwards;
+    animation: slideUpAnima 1.6s forwards;
+}
+.slide-up-anima3 {
+    -webkit-animation: slideUpAnima 2s forwards;
+    animation: slideUpAnima 2s forwards;
+}
+.slide-up-anima4 {
+    -webkit-animation: slideUpAnima 2.4s forwards;
+    animation: slideUpAnima 2s forwards;
 }
 @keyframes fallOut {
     0%{
@@ -612,6 +659,7 @@ ul.list-options {
 					}
 					.profile-img {
 						margin-left: -20px;
+						margin-top: -20px;
 						background: url(images/profile_sketch_chris_2.png) no-repeat;
 						background-size: 100% 100%;
 						width: 200px;
@@ -632,18 +680,29 @@ ul.list-options {
 					}
 					.skills {
 						margin-top: 25px;
-						padding: 15px;
-						color: #fff;
-						font-size: 2.2em;
-						text-shadow: 1px 1px 1px #000;
-						background: hsla(120, 60%, 0%, 0.96);
+						padding: 0 0 0 15px;
+						color: #555;
+						font-size: 2.8em;
+						text-shadow: 1px 1px 1px #999;
+						//background: url(images/old_paper.png) no-repeat;
+						background-size: 100% 100%;
 						display: none;
-						width:700px;
+						width:750px;
 						border-radius: 5px;
-						box-shadow: inset 1px 1px 2px 1px #000, 1px 1px 2px 0 #777;
+						//box-shadow: 1px 1px 10px 0 #000;
 						text-align: left;
 						position: relative;
+						b {
+							color: #444;
+							@media screen and (max-width: 1100px) {
+								color: #fff;
+							}
+						}
 						@media screen and (max-width: 1100px) {
+							text-shadow: 1px 1px 1px #000;
+							padding: 15px;
+							background: hsla(120, 60%, 0%, 0.96);
+							color: #fff;
 							margin: 0;
 							//padding: 10px;
 							width: 92%;
@@ -855,7 +914,7 @@ ul.list-options {
 								}
 								p {
 									font-size: 20px;
-									padding: 10px 0 10px 0;
+									padding: 30px 0 10px 0;
 									font-family: "Raleway";
 									text-shadow: 1px 1px 1px #999;
 									@media screen and (max-width: 1100px) {
@@ -904,6 +963,7 @@ ul.list-options {
 								background-size: 100% 100%;
 							}
 							p {
+								opacity: 0;
 								text-align: center;
 								width: 400px;
 								font-size: 24px;
@@ -938,6 +998,7 @@ ul.list-options {
 							background: url(images/ocean.jpg) no-repeat;
 							background-size: 100% 100%;
 							p {
+								opacity: 0;
 								text-align: center;
 								margin: 0 auto;
 								width: 400px;
