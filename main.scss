@@ -767,7 +767,7 @@ ul.list-options {
 					.text-pic {
 						background-image: url(images/surfer_suit.jpg);
 						background-size: 100% 100%;
-						border-radius: 5px;
+						border-radius: 3px;
 						box-shadow: 1px 1px 3px #333;
 						//shape-outside: polygon(10% 0, 10% 17.25%, 0 19.625%, 4% 37.625%, 12% 45%, 32% 55%, 30% 62.5%, 30% 71.875%, 35% 87.5%, 37% 90.75%, 45% 100%);
 						width: 500px;
@@ -827,7 +827,7 @@ ul.list-options {
 							margin: 20px 0 0 5px;
 							width: 500px;
 							height: 290px;
-							border-radius: 5px;
+							border-radius: 3px;
 							box-shadow: 1px 1px 2px 0 #555;
 							float: right;
 							font-family: "Open Sans Condensed";
@@ -839,17 +839,22 @@ ul.list-options {
 						}
 						@media screen and (max-width: 600px) {
 							width: 250px;
-							height: 150px;
+							height: 160px;
 						}
 						@media screen and (max-width: 500px) {
 							width: 100%;
-							height: 190px;
+							height: 220px;
 							margin: 10px 0 0 0;
 							float: none;
 							padding-top: 60px;
+							border-radius: 0px;
+						}
+						@media screen and (max-width: 450px) {
+							height: 200px;
+							padding-top: 40px;
 						}
 						@media screen and (max-width: 400px) {
-							height: 150px;
+							height: 160px;
 							padding-top: 40px;
 						}
 						p {
