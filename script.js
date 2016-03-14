@@ -1,4 +1,4 @@
-var intertV;
+var intertV,loaded;
 
 $(window).load(function(){
 	slideContent(10000);
@@ -13,8 +13,8 @@ $(window).load(function(){
 	setTimeout(function(){$('.skills').css({'display':'inline-block'});},100);
 
 	//wavePicAnima();
-	
 });
+
 
 $(document).ready(function(){
 	resizeWindow();
@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	$('.name-logo').click(function() {
-  		alert($(document).width());
+  		clearInterval(intertV);
 	});
 
 	$('li.parent-3d').on('click', function(){
@@ -149,13 +149,14 @@ $(document).mousemove(function(e){
 //Welcome text and recommendation for courses animated sliding text
 //time variable sets pause between each message
 function slideContent(time){
+	clearInterval(intertV);
 	$('.slides:first').show();
 	var i = 0;
 	var listLength = $('.slide-content .slides').length;
 	intertV = setInterval(function(){ 
 		if(i===listLength-1){
 			setTimeout(function(){
-				$('.slides:nth('+(i)+')').hide();
+				$('.slides').hide();
 				$('.slides:first').css({'opacity':'0'}).show().removeClass('translate-y-out').addClass('fade-in-slow');
 				i=0;
 			},0);
@@ -171,7 +172,6 @@ function slideContent(time){
 			},100);
 		}
 	}, time);
-	intertV;
 }
 
 
