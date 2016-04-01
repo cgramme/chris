@@ -625,10 +625,10 @@ ul.list-options {
           line-height: 20px; } }
     .main-content .current-content .wrap #comet {
       position: relative;
-      background: -webkit-radial-gradient(circle, #999 60%, #fff 65%);
-      background: -o-radial-gradient(circle, #999 60%, #fff 65%);
-      background: -moz-radial-gradient(circle, #999 60%, #fff 65%);
-      background: radial-gradient(circle, #999 60%, #fff 65%);
+      background: -webkit-radial-gradient(circle, #555 60%, #fff 65%);
+      background: -o-radial-gradient(circle, #555 60%, #fff 65%);
+      background: -moz-radial-gradient(circle, #555 60%, #fff 65%);
+      background: radial-gradient(circle, #555 60%, #fff 65%);
       border-radius: 50%;
       height: 10px;
       width: 10px;

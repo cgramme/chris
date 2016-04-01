@@ -738,7 +738,7 @@ ul.list-options {
 					}
 				     #comet {
 				        position: relative;
-				        @include planetGradient(circle, #999 60%, #fff 65%);
+				        @include planetGradient(circle, #555 60%, #fff 65%);
 				        
 				        border-radius: 50%;
 				        height: 10px;

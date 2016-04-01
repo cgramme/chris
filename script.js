@@ -159,11 +159,11 @@ function slideContent(time){
 			setTimeout(function(){
 				$('.slide-content').addClass('scale-in-out');
 				$('.slides').hide();
-				$('.slides:first').css({'opacity':'0','visibility':'hidden'}).show().removeClass('translate-y-out').addClass('fade-in-slow');
+				$('.slides:first').css({'opacity':'0'}).show().removeClass('translate-y-out').addClass('fade-in-slow');
 				i=0;
 			},0);
 		}else{
-			$('.slides:first').css({'opacity':'1','visibility':'visible'}).removeClass('translate-y-out, fade-in-slow');
+			$('.slides:first').css({'opacity':'1'}).removeClass('translate-y-out, fade-in-slow');
 			$('.slides:nth('+(i+1)+')').show().css({'display':'block'});
 			resizeWindow();
 			setTimeout(function(){
