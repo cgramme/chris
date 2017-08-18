@@ -1,11 +1,4 @@
 <div class="wrap">
-					<div class="interests-content">
-						<div class="interests-label">Interests</div>
-						<img class="mountain" src="images/yosemite.jpg" alt="mountain">
-						<h3 class="indent">I've always been drawn to the unknown; As a child I was one of those kids who had to take everything apart. A perfectly good working radio or tv was an opportunity for me to "figure it out". This attitude lead me to programming, where there is always a challenge to be solved, a technology to be mastered, or most of all something to be created. My favorite book when I was still in the single digit ages was "Thinking Physics", which I read almost every night for fun along with an array of other science works.</h3><br>
-						<h3 class="indent">I have many other interests besides the obvious "nerd-atious" ones. Anything having to do with the outdoors, I'm in.  I love the ocean and miss it tremendously, as I was born and raised in San Diego for a good part of my childhood. Although Atlanta, Georgia might be a much different place I call it home now. With the Appalachian Mountains so close I have frequently been backpacking miles into them for a few days of fun and adventure with friends. In addition to backpacking, I have also been camping/stayed on islands, aircraft carriers, and battleships.</h3><br>
-						<h3 class="indent">Board sports will always be a part of my life, whether it be snowboarding, surfing, wakeboarding, longboarding, you fill in the blank "_____boarding". I enjoy the thrill and adventure it brings to my life as well as the technical side of learning new tricks and techniques, while trying not to injure myself in the process. I wouldn't necessarily call myself a daredevil, but I have always wanted to skydive and/or go bungee jumping. Although I enjoy an abundance of adventure I am a very grounded, peaceful, and at times called a quiet man.</h3><br>
-						<img class="computer" src="images/looking_sky.jpg" alt="computer">
-						<h3 class="indent">Back to programming, finally. I take an exuberant amount pride in every project I am involed in. My name is my reputation and it is of the utmost importance to me to excel in whatever it is I am implementing. Teaching myself to program has been one of the most enjoyable, frustrating, challenging, and gratifying experiences I have been involved with. I educated myself by watching countless video tutorials, searching Google, and learing by trial and error until whatever vision I had was complete. I have a motto, and that is to never back down from an idea or project. This way of thinking has given me the confidence in my ability that I "can do" anything I set my mind to no matter the challenge at hand.</h3>
-					</div>	
-				</div>
+ <div class="interests-content">
+ </div>	
+</div>
